@@ -259,8 +259,8 @@
                 <option value="" disabled selected>Choose a topic...</option>
                 <option value="grammar">Grammar</option>
                 <option value="vocabulary">Vocabulary</option>
-                <option value="reading-comprehension"> Comprehension</option>
-                <option value="idioms-phrases">Idioms & Phrases</option>
+                <option value="comprehension"> Comprehension</option>
+                <option value="idioms">Idioms & Phrases</option>
                 <option value="punctuation">Punctuation</option>
             </select>
             <button id="start-quiz">Start Quiz</button>
@@ -2438,19 +2438,1084 @@
                     answer: 0
                 }
             ],
-    "reading-comprehension": [
+    comprehension: [
         {
-            "question": "What is the main theme of the passage?",
-            "options": ["Friendship", "Adventure", "Love", "Loneliness"],
-            "answer": 2
-        },
-        {
-            "question": "According to the passage, why did the character leave the town?",
-            "options": ["To find a new job", "To escape danger", "To visit a friend", "To get married"],
-            "answer": 1
-        }
+                    question: "Read the passage: 'The sun was setting, casting long shadows across the field. Sarah watched as the sky turned from blue to orange, then to deep purple. She knew it was time to go home.' What time of day is described?",
+                    options: ["Morning", "Noon", "Evening", "Midnight"],
+                    answer: 2
+                },
+                {
+                    question: "In the sentence: 'Despite the heavy rain, he insisted on walking rather than taking a taxi.' What can we infer about 'he'?",
+                    options: ["He enjoys getting wet", "He has no money for a taxi", "He is stubborn or determined", "He lives very close by"],
+                    answer: 2
+                },
+                {
+                    question: "Read the passage: 'Mark looked at his watch, surprised that it was already midnight. He had been working on his project for six hours straight without a break.' What is the main idea?",
+                    options: ["Mark is always late", "Mark loses track of time when working", "Mark's watch is broken", "Mark works night shifts"],
+                    answer: 1
+                },
+                {
+                    question: "In the sentence: 'Although he had prepared thoroughly, James was still nervous about his presentation.' Which statement is true?",
+                    options: ["James did not prepare enough", "Preparation eliminated James's nervousness", "James was nervous despite his preparation", "James gives presentations frequently"],
+                    answer: 2
+                },
+                {
+                    question: "Read the passage: 'The new policy was met with resistance. Some employees complained that it was too restrictive, while others thought it didn't go far enough.' What can be concluded?",
+                    options: ["All employees disliked the policy", "The policy received mixed reactions", "The policy was eventually withdrawn", "Most employees supported the policy"],
+                    answer: 1
+                },
+                {
+                    question: "In the sentence: 'Having finished her homework, Elena decided to watch TV.' What happened first?",
+                    options: ["Elena watched TV", "Elena decided to watch TV", "Elena finished her homework", "Elena started her homework"],
+                    answer: 2
+                },
+                {
+                    question: "Read the passage: 'Dr. Lee's research findings contradicted previous studies on the subject. Initially, his colleagues were skeptical, but the evidence was compelling.' What does this imply about Dr. Lee's research?",
+                    options: ["It was eventually accepted", "It was completely rejected", "It was poorly conducted", "It was identical to previous studies"],
+                    answer: 0
+                },
+                {
+                    question: "In the sentence: 'Not only did she win the race, but she also broke the school record.' What is emphasized?",
+                    options: ["She barely won the race", "She won by a small margin", "She achieved two accomplishments", "She was expected to lose"],
+                    answer: 2
+                },
+                {
+                    question: "Read the passage: 'The museum was closing in ten minutes. John hurried through the final exhibit, glancing quickly at the artifacts without reading their descriptions.' Why was John hurrying?",
+                    options: ["He was bored with the museum", "He had limited time before closing", "He had seen the artifacts before", "He was meeting someone outside"],
+                    answer: 1
+                },
+                {
+                    question: "In the sentence: 'Despite being exhausted, the marathon runners continued to the finish line.' What motivated the runners?",
+                    options: ["Fear of failure", "Desire to rest", "Determination to finish", "External pressure"],
+                    answer: 2
+                },
+                {
+                    question: "Read the passage: 'The old house stood abandoned for decades. Its windows were broken, and vines crept up its walls. Nevertheless, Maya saw its potential.' What is Maya's attitude toward the house?",
+                    options: ["Fear", "Optimism", "Disgust", "Indifference"],
+                    answer: 1
+                },
+                {
+                    question: "In the sentence: 'The chef, who had trained in Paris, prepared an exquisite meal for the guests.' Where did the chef train?",
+                    options: ["In a local restaurant", "At a cooking school", "In Paris", "At home"],
+                    answer: 2
+                },
+                {
+                    question: "Read the passage: 'The climate conference ended without an agreement. Delegates from industrialized countries and those from developing nations could not reconcile their differences.' What was the problem?",
+                    options: ["Lack of interest in climate issues", "Disagreement between different groups", "Poor organization of the conference", "Insufficient time for discussions"],
+                    answer: 1
+                },
+                {
+                    question: "In the sentence: 'Before submitting his application, Michael proofread it several times.' What does this suggest about Michael?",
+                    options: ["He is indecisive", "He is careful and thorough", "He is easily distracted", "He is overly confident"],
+                    answer: 1
+                },
+                {
+                    question: "Read the passage: 'The company announced record profits. However, it also revealed plans to lay off 15% of its workforce next month.' How can the company's actions be best described?",
+                    options: ["Consistent and transparent", "Contradictory and concerning", "Strategic and necessary", "Innovative and forward-thinking"],
+                    answer: 1
+                },
+                                {
+                    question: "What is the main purpose of a comprehension passage?",
+                    options: ["To entertain", "To inform or convey a message", "To confuse the reader", "To sell a product"],
+                    answer: 1
+                },
+                {
+                    question: "What should you do first when answering comprehension questions?",
+                    options: ["Read the passage carefully", "Answer randomly", "Read only the questions", "Look for difficult words"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following is the best way to find the main idea of a passage?",
+                    options: ["Look at the first and last sentences", "Find repeated themes", "Count the number of paragraphs", "Ignore the passage and guess"],
+                    answer: 1
+                },
+                {
+                    question: "What does it mean if a passage is written in the first person?",
+                    options: ["It is a formal essay", "The narrator is part of the story", "It is a factual report", "It is always fiction"],
+                    answer: 1
+                },
+                {
+                    question: "Which of these is NOT a type of comprehension question?",
+                    options: ["Literal", "Inferential", "Evaluative", "Imaginative"],
+                    answer: 3
+                },
+                {
+                    question: "What type of question asks you to find answers directly stated in the passage?",
+                    options: ["Inferential", "Literal", "Evaluative", "Imaginative"],
+                    answer: 1
+                },
+                {
+                    question: "Which type of question requires you to make a judgment or give an opinion based on the passage?",
+                    options: ["Literal", "Inferential", "Evaluative", "Factual"],
+                    answer: 2
+                },
+                {
+                    question: "What does an inferential question ask you to do?",
+                    options: ["Find the exact words in the passage", "Guess randomly", "Read between the lines and make conclusions", "Write your own story"],
+                    answer: 2
+                },
+                {
+                    question: "If a comprehension passage includes dialogue, what should you focus on?",
+                    options: ["Only the narrator's words", "The names of the characters", "The tone and meaning behind the dialogue", "The punctuation marks"],
+                    answer: 2
+                },
+                {
+                    question: "What does the word ‘context’ mean in comprehension?",
+                    options: ["The background information that helps understand meaning", "The main character’s name", "The last sentence of a passage", "The type of font used"],
+                    answer: 0
+                },
+                {
+                    question: "Why is it important to identify the author's purpose in a passage?",
+                    options: ["To know the author's name", "To determine if the passage is fiction", "To understand the reason for writing", "To count the words"],
+                    answer: 2
+                },
+                {
+                    question: "Which of these is an example of a factual passage?",
+                    options: ["A news article", "A fairy tale", "A fantasy novel", "A poem"],
+                    answer: 0
+                },
+                {
+                    question: "When answering comprehension questions, what does 'compare' mean?",
+                    options: ["Find similarities", "Find differences", "Guess the answer", "Count the words"],
+                    answer: 0
+                },
+                {
+                    question: "What is a good strategy for understanding difficult words in a passage?",
+                    options: ["Ignore them", "Look at the surrounding words for clues", "Guess randomly", "Skip to the next paragraph"],
+                    answer: 1
+                },
+                {
+                    question: "Which of the following is the best way to summarize a passage?",
+                    options: ["Include all the details", "Use only one word", "Identify the main points", "Copy the passage exactly"],
+                    answer: 2
+                },
+                {
+                    question: "If a passage uses the phrase ‘on the other hand,’ what is it likely doing?",
+                    options: ["Comparing two ideas", "Introducing a story", "Listing facts", "Giving an opinion"],
+                    answer: 0
+                },
+                {
+                    question: "What does it mean if a passage is ‘descriptive’?",
+                    options: ["It gives detailed sensory information", "It tells a story", "It is a list of facts", "It is a set of instructions"],
+                    answer: 0
+                },
+                {
+                    question: "Why is it important to read the questions before reading the passage?",
+                    options: ["To save time by skipping parts", "To know what to look for", "To avoid reading the passage", "To find answers without thinking"],
+                    answer: 1
+                },
+                {
+                    question: "Which of these words is a signal for cause and effect in a passage?",
+                    options: ["However", "Therefore", "Firstly", "In contrast"],
+                    answer: 1
+                },
+                {
+                    question: "What should you do after reading the passage and answering questions?",
+                    options: ["Submit immediately", "Double-check your answers", "Rewrite the passage", "Guess the remaining answers"],
+                    answer: 1
+                },
+                                {
+                    question: "What is the best way to determine the meaning of an unfamiliar word in a passage?",
+                    options: ["Look at the surrounding context", "Guess randomly", "Ignore the word", "Change the word"],
+                    answer: 0
+                },
+                {
+                    question: "What is the main idea of a passage?",
+                    options: ["A minor detail", "The central message", "A random sentence", "The first word"],
+                    answer: 1
+                },
+                {
+                    question: "Which question type requires you to provide evidence from the passage?",
+                    options: ["Inferential", "Literal", "Evaluative", "Imaginative"],
+                    answer: 1
+                },
+                {
+                    question: "Which of the following is an example of a persuasive passage?",
+                    options: ["A political speech", "A dictionary entry", "A science report", "A cooking recipe"],
+                    answer: 0
+                },
+                {
+                    question: "What does ‘tone’ refer to in a comprehension passage?",
+                    options: ["The attitude of the writer", "The length of sentences", "The number of paragraphs", "The size of the text"],
+                    answer: 0
+                },
+                {
+                    question: "Which of these words might indicate a conclusion in a passage?",
+                    options: ["For example", "In contrast", "Therefore", "However"],
+                    answer: 2
+                },
+                {
+                    question: "What does it mean if a passage is ‘expository’?",
+                    options: ["It explains or informs", "It tells a story", "It expresses feelings", "It argues a point"],
+                    answer: 0
+                },
+                {
+                    question: "If a comprehension question asks for the ‘author’s perspective,’ what is it asking?",
+                    options: ["The author’s opinion or viewpoint", "The publisher’s name", "The number of words in the passage", "The last sentence"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following best describes a fictional passage?",
+                    options: ["A passage based on imagination", "A passage with only facts", "A passage without a plot", "A passage with only numbers"],
+                    answer: 0
+                },
+                {
+                    question: "What is a common feature of narrative passages?",
+                    options: ["They tell a story", "They list facts", "They give instructions", "They argue a point"],
+                    answer: 0
+                },
+                {
+                    question: "What should you do if you are asked to paraphrase a sentence from the passage?",
+                    options: ["Copy it word for word", "Rewrite it in your own words", "Skip the question", "Make it longer"],
+                    answer: 1
+                },
+                {
+                    question: "Why is it important to understand the structure of a passage?",
+                    options: ["To guess answers more easily", "To locate key information quickly", "To memorize the passage", "To copy the passage exactly"],
+                    answer: 1
+                },
+                {
+                    question: "Which of these sentences is most likely a topic sentence?",
+                    options: ["A sentence that introduces the main idea", "A random sentence from the middle", "A sentence with many details", "A sentence with a quotation"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following transition words suggests contrast?",
+                    options: ["Similarly", "Moreover", "However", "Therefore"],
+                    answer: 2
+                },
+                {
+                    question: "What is the difference between a fact and an opinion in a passage?",
+                    options: ["A fact can be proven; an opinion is based on personal belief", "Both are the same", "Opinions are always true", "Facts cannot be proven"],
+                    answer: 0
+                },
+                {
+                    question: "If a passage contains statistical data, what type of passage is it most likely?",
+                    options: ["Narrative", "Persuasive", "Expository", "Descriptive"],
+                    answer: 2
+                },
+                {
+                    question: "Why is it important to identify keywords in comprehension questions?",
+                    options: ["To match them with the passage", "To make the question easier", "To guess answers", "To shorten the passage"],
+                    answer: 0
+                },
+                {
+                    question: "Which type of question requires you to predict what might happen next in a passage?",
+                    options: ["Literal", "Inferential", "Evaluative", "Factual"],
+                    answer: 1
+                },
+                {
+                    question: "If a passage is written in chronological order, what does it focus on?",
+                    options: ["Events happening in sequence", "Comparing two things", "Giving instructions", "Explaining a single idea"],
+                    answer: 0
+                },
+                {
+                    question: "What is the function of a summary?",
+                    options: ["To give a brief overview of the main points", "To repeat the passage word for word", "To add more details", "To change the meaning of the passage"],
+                    answer: 0
+                },
+                                {
+                    question: "What is the best strategy for answering comprehension questions?",
+                    options: ["Skim the passage first", "Read the questions first", "Memorize the entire passage", "Guess the answers"],
+                    answer: 1
+                },
+                {
+                    question: "What does the term ‘implicit meaning’ refer to?",
+                    options: ["A meaning that is directly stated", "A meaning that must be inferred", "A meaning that is written in bold", "A meaning that is incorrect"],
+                    answer: 1
+                },
+                {
+                    question: "Which of the following words signals a cause-and-effect relationship?",
+                    options: ["Although", "Therefore", "Moreover", "Similarly"],
+                    answer: 1
+                },
+                {
+                    question: "What should you do if a comprehension question asks for ‘supporting details’?",
+                    options: ["Identify key facts and examples", "Summarize the entire passage", "Ignore the main idea", "Guess the answer"],
+                    answer: 0
+                },
+                {
+                    question: "How can you determine the tone of a passage?",
+                    options: ["By analyzing the author’s word choices", "By looking at the title", "By counting the number of sentences", "By checking for numbers"],
+                    answer: 0
+                },
+                {
+                    question: "Which of these is NOT a type of comprehension question?",
+                    options: ["Literal", "Inferential", "Creative", "Evaluative"],
+                    answer: 2
+                },
+                {
+                    question: "What is an author’s purpose if they write a passage with step-by-step instructions?",
+                    options: ["To persuade", "To entertain", "To inform", "To describe"],
+                    answer: 2
+                },
+                {
+                    question: "What does ‘compare and contrast’ mean?",
+                    options: ["Showing similarities and differences", "Explaining step-by-step", "Listing a sequence of events", "Telling a story"],
+                    answer: 0
+                },
+                {
+                    question: "What is the first step in analyzing a comprehension passage?",
+                    options: ["Reading the passage carefully", "Guessing the answers", "Skipping hard words", "Reading only the first paragraph"],
+                    answer: 0
+                },
+                {
+                    question: "Which transition word is used to introduce an example?",
+                    options: ["For instance", "On the other hand", "Finally", "However"],
+                    answer: 0
+                },
+                {
+                    question: "What should you do when encountering an unfamiliar word in a passage?",
+                    options: ["Look at context clues", "Skip it", "Replace it with another word", "Ignore it"],
+                    answer: 0
+                },
+                {
+                    question: "Which sentence best describes an inference?",
+                    options: ["A conclusion based on evidence and reasoning", "A direct statement in the passage", "A random guess", "A phrase in quotation marks"],
+                    answer: 0
+                },
+                {
+                    question: "If a passage is structured in a ‘problem and solution’ format, what should you expect?",
+                    options: ["An issue and its resolution", "A list of events", "A character’s journey", "A detailed description"],
+                    answer: 0
+                },
+                {
+                    question: "What is an antonym clue in a passage?",
+                    options: ["A clue that provides a word with an opposite meaning", "A clue that explains a word’s meaning", "A clue that gives a synonym", "A clue that provides an example"],
+                    answer: 0
+                },
+                {
+                    question: "Which type of passage is most likely to include sensory details?",
+                    options: ["Descriptive", "Persuasive", "Expository", "Narrative"],
+                    answer: 0
+                },
+                {
+                    question: "Why is summarizing a passage important?",
+                    options: ["It helps retain key ideas", "It replaces reading the passage", "It focuses only on minor details", "It changes the meaning"],
+                    answer: 0
+                },
+                {
+                    question: "What is the difference between a main idea and a supporting detail?",
+                    options: ["A main idea is the central concept; supporting details provide evidence", "Both are the same", "A supporting detail is always a fact", "A main idea is a random sentence"],
+                    answer: 0
+                },
+                {
+                    question: "Which reading strategy is most useful for quickly finding specific information?",
+                    options: ["Scanning", "Skimming", "Close reading", "Memorizing"],
+                    answer: 0
+                },
+                {
+                    question: "Which phrase signals a contrast between ideas?",
+                    options: ["On the contrary", "In addition", "For example", "As a result"],
+                    answer: 0
+                },
+                {
+                    question: "What is a rhetorical question in a passage?",
+                    options: ["A question that does not require an answer", "A question with a definite answer", "A question with multiple answers", "A question that is incorrect"],
+                    answer: 0
+                },
+                                {
+                    question: "What is the best way to identify the main idea of a passage?",
+                    options: ["Look at the first and last sentences", "Focus on supporting details", "Ignore the title", "Guess based on personal opinion"],
+                    answer: 0
+                },
+                {
+                    question: "Which type of passage presents facts and explanations?",
+                    options: ["Narrative", "Expository", "Persuasive", "Poetic"],
+                    answer: 1
+                },
+                {
+                    question: "What is the function of a topic sentence?",
+                    options: ["Introduces the main idea", "Provides a detailed example", "Asks a question", "Repeats information"],
+                    answer: 0
+                },
+                {
+                    question: "Which clue word often signals a conclusion?",
+                    options: ["For example", "In summary", "Firstly", "On the contrary"],
+                    answer: 1
+                },
+                {
+                    question: "What should a reader do if a passage contains unfamiliar words?",
+                    options: ["Use context clues", "Skip the passage", "Guess the meaning randomly", "Memorize the word"],
+                    answer: 0
+                },
+                {
+                    question: "Which question type asks for an answer directly stated in the text?",
+                    options: ["Inferential", "Literal", "Evaluative", "Analytical"],
+                    answer: 1
+                },
+                {
+                    question: "What does a persuasive passage aim to do?",
+                    options: ["Convince the reader", "Tell a story", "Describe a setting", "List instructions"],
+                    answer: 0
+                },
+                {
+                    question: "How can a reader determine the author’s point of view?",
+                    options: ["Analyze the tone and arguments", "Count the number of paragraphs", "Ignore the introduction", "Focus only on statistics"],
+                    answer: 0
+                },
+                {
+                    question: "What is the function of a rhetorical question?",
+                    options: ["To make a point without expecting an answer", "To confuse the reader", "To summarize the passage", "To provide a direct fact"],
+                    answer: 0
+                },
+                {
+                    question: "Which type of passage is most likely to include dialogue?",
+                    options: ["Narrative", "Expository", "Persuasive", "Technical"],
+                    answer: 0
+                },
+                {
+                    question: "Which word signals a comparison?",
+                    options: ["Similarly", "However", "Because", "Therefore"],
+                    answer: 0
+                },
+                {
+                    question: "What is the purpose of a summary?",
+                    options: ["To condense key information", "To rewrite the passage in full", "To add personal opinions", "To make the passage longer"],
+                    answer: 0
+                },
+                {
+                    question: "Which statement best defines a supporting detail?",
+                    options: ["A fact or example that explains the main idea", "A sentence that repeats the main idea", "An opinion stated in the passage", "A sentence unrelated to the passage"],
+                    answer: 0
+                },
+                {
+                    question: "How can a reader distinguish between fact and opinion in a passage?",
+                    options: ["Check for evidence and sources", "Assume all statements are opinions", "Focus only on adjectives", "Ignore the context"],
+                    answer: 0
+                },
+                {
+                    question: "What does ‘paraphrasing’ mean?",
+                    options: ["Restating information in your own words", "Copying the exact sentence", "Guessing the meaning of a passage", "Ignoring the passage"],
+                    answer: 0
+                },
+                {
+                    question: "Which of these transition words indicates contrast?",
+                    options: ["However", "Additionally", "Furthermore", "For instance"],
+                    answer: 0
+                },
+                {
+                    question: "Which reading strategy involves quickly glancing over a passage to get a general idea?",
+                    options: ["Skimming", "Scanning", "Annotating", "Memorizing"],
+                    answer: 0
+                },
+                {
+                    question: "Why is identifying the audience of a passage important?",
+                    options: ["It helps understand the author’s purpose", "It changes the meaning of the passage", "It determines the word count", "It helps rewrite the passage"],
+                    answer: 0
+                },
+                {
+                    question: "Which type of comprehension question requires the reader to analyze and evaluate?",
+                    options: ["Inferential", "Evaluative", "Literal", "Summarizing"],
+                    answer: 1
+                },
+                {
+                    question: "What should a reader do after reading a passage?",
+                    options: ["Summarize key points", "Forget the details", "Move on without reflection", "Change the main idea"],
+                    answer: 0
+                },
+                                {
+                    question: "What is the best way to determine the meaning of an unfamiliar word in a passage?",
+                    options: ["Use context clues", "Skip the word", "Guess randomly", "Check if it rhymes with another word"],
+                    answer: 0
+                },
+                {
+                    question: "Which type of passage tells a story?",
+                    options: ["Narrative", "Expository", "Persuasive", "Descriptive"],
+                    answer: 0
+                },
+                {
+                    question: "What does the main idea of a passage represent?",
+                    options: ["The central point of the text", "A minor detail", "A random sentence", "The last sentence of the passage"],
+                    answer: 0
+                },
+                {
+                    question: "Which word signals a cause-and-effect relationship?",
+                    options: ["Because", "However", "Similarly", "For example"],
+                    answer: 0
+                },
+                {
+                    question: "What is the primary purpose of an expository passage?",
+                    options: ["To explain or inform", "To persuade the reader", "To entertain", "To express emotions"],
+                    answer: 0
+                },
+                {
+                    question: "How does a reader recognize a fact in a passage?",
+                    options: ["It can be proven true or false", "It is always written in bold", "It contains an opinion", "It is a question"],
+                    answer: 0
+                },
+                {
+                    question: "Which statement best defines a conclusion?",
+                    options: ["A summary of the main ideas", "A new topic", "An opinionated statement", "An unrelated detail"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following is an example of a transition word?",
+                    options: ["Therefore", "Apple", "Blue", "Run"],
+                    answer: 0
+                },
+                {
+                    question: "What is the author's purpose in a persuasive passage?",
+                    options: ["To convince the reader", "To provide instructions", "To entertain", "To describe a setting"],
+                    answer: 0
+                },
+                {
+                    question: "What does it mean to infer information from a passage?",
+                    options: ["Draw conclusions based on evidence", "Guess randomly", "Find the longest sentence", "Copy words from the text"],
+                    answer: 0
+                },
+                {
+                    question: "What question does a ‘why’ question usually ask?",
+                    options: ["The reason for something", "A description", "A comparison", "A definition"],
+                    answer: 0
+                },
+                {
+                    question: "What type of passage is most likely to include step-by-step instructions?",
+                    options: ["Procedural", "Narrative", "Persuasive", "Descriptive"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following best describes a summary?",
+                    options: ["A brief statement of the main points", "A word-for-word copy of the text", "A new argument", "A list of random details"],
+                    answer: 0
+                },
+                {
+                    question: "Which word signals a contrast between ideas?",
+                    options: ["However", "Additionally", "Similarly", "For example"],
+                    answer: 0
+                },
+                {
+                    question: "Why is identifying the tone of a passage important?",
+                    options: ["It helps understand the author's attitude", "It changes the meaning of the passage", "It determines the length of the text", "It affects the word count"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following is a key detail in a passage?",
+                    options: ["A fact supporting the main idea", "An opinionated statement", "A random word", "An unrelated sentence"],
+                    answer: 0
+                },
+                {
+                    question: "Which strategy helps in understanding long passages?",
+                    options: ["Breaking it into sections", "Skipping the text", "Reading the last line only", "Ignoring difficult words"],
+                    answer: 0
+                },
+                {
+                    question: "Which phrase is most likely to introduce an example?",
+                    options: ["For instance", "On the contrary", "Because of this", "Nevertheless"],
+                    answer: 0
+                },
+                {
+                    question: "How can a reader identify bias in a passage?",
+                    options: ["Look for emotionally charged language", "Count the number of paragraphs", "Check the font size", "Ignore the adjectives"],
+                    answer: 0
+                },
+                {
+                    question: "What is a synonym for 'summarize'?",
+                    options: ["Condense", "Expand", "Repeat", "Ignore"],
+                    answer: 0
+                },
+                                {
+                    question: "What is the best strategy for identifying the main idea of a passage?",
+                    options: ["Read the first and last sentences", "Look for repeated themes or key points", "Count the number of words", "Find the longest sentence"],
+                    answer: 1
+                },
+                {
+                    question: "Which of the following is an example of a fact?",
+                    options: ["Water boils at 100°C", "Chocolate is the best flavor", "Summer is the most fun season", "Dogs are cuter than cats"],
+                    answer: 0
+                },
+                {
+                    question: "What is the primary purpose of a descriptive passage?",
+                    options: ["To create a vivid image using sensory details", "To argue a point", "To provide step-by-step instructions", "To explain a scientific concept"],
+                    answer: 0
+                },
+                {
+                    question: "Which term refers to the sequence of events in a story?",
+                    options: ["Plot", "Tone", "Perspective", "Summary"],
+                    answer: 0
+                },
+                {
+                    question: "What is an author's point of view?",
+                    options: ["The perspective from which a text is written", "The location of the story", "The length of the passage", "The last sentence"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following is an example of a persuasive passage?",
+                    options: ["An advertisement urging people to recycle", "A news report about a weather forecast", "A recipe for making pasta", "A poem about nature"],
+                    answer: 0
+                },
+                {
+                    question: "What does 'context clues' refer to?",
+                    options: ["Hints within a passage that help define unfamiliar words", "The title of a passage", "The length of the passage", "A summary of the passage"],
+                    answer: 0
+                },
+                {
+                    question: "Which of these words is most likely to indicate a comparison?",
+                    options: ["Similarly", "However", "Because", "For example"],
+                    answer: 0
+                },
+                {
+                    question: "What is an inference?",
+                    options: ["A conclusion drawn from evidence in the text", "A direct quote from the passage", "A random guess", "A summary of the entire passage"],
+                    answer: 0
+                },
+                {
+                    question: "Which part of a passage typically presents the main argument in a persuasive text?",
+                    options: ["The thesis statement", "The footnotes", "The last word", "The title"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following best describes a theme in literature?",
+                    options: ["A central message or lesson", "The number of paragraphs", "The font style used", "The name of a character"],
+                    answer: 0
+                },
+                {
+                    question: "What is a supporting detail in a passage?",
+                    options: ["Information that explains or proves the main idea", "An unrelated sentence", "A random fact", "The author's opinion"],
+                    answer: 0
+                },
+                {
+                    question: "Which question should you ask to determine the main idea?",
+                    options: ["What is this passage mostly about?", "How many words are in this passage?", "What is the first sentence?", "Who wrote this passage?"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following is a signal word for chronological order?",
+                    options: ["Next", "Similarly", "Therefore", "Nevertheless"],
+                    answer: 0
+                },
+                {
+                    question: "What is an antonym?",
+                    options: ["A word with the opposite meaning", "A word with the same meaning", "A word with multiple meanings", "A word that sounds the same"],
+                    answer: 0
+                },
+                {
+                    question: "What is the tone of a passage?",
+                    options: ["The author's attitude towards the subject", "The number of paragraphs", "The title of the passage", "The last sentence"],
+                    answer: 0
+                },
+                {
+                    question: "How can you determine if an author's claim is credible?",
+                    options: ["Check for supporting evidence", "See if it is written in bold", "Count the number of words", "Check if it contains long sentences"],
+                    answer: 0
+                },
+                {
+                    question: "Which type of passage is most likely to contain dialogue?",
+                    options: ["A narrative story", "A scientific report", "An instruction manual", "A newspaper article"],
+                    answer: 0
+                },
+                {
+                    question: "What is the role of a conclusion in a passage?",
+                    options: ["To summarize and reinforce the main points", "To introduce a new topic", "To provide random details", "To change the author's opinion"],
+                    answer: 0
+                },
+                {
+                    question: "Which of these words indicates a contrast between ideas?",
+                    options: ["On the other hand", "Additionally", "For example", "Because"],
+                    answer: 0
+                },
+                                {
+                    question: "Which reading strategy helps in understanding complex texts better?",
+                    options: ["Skimming", "Guessing", "Ignoring difficult words", "Reading only the first paragraph"],
+                    answer: 0
+                },
+                {
+                    question: "What type of passage explains how something works?",
+                    options: ["Expository", "Narrative", "Persuasive", "Descriptive"],
+                    answer: 0
+                },
+                {
+                    question: "What is a synonym for 'enhance'?",
+                    options: ["Improve", "Decrease", "Ignore", "Break"],
+                    answer: 0
+                },
+                {
+                    question: "What does the word 'explicit' mean?",
+                    options: ["Clearly stated", "Hidden", "Confusing", "Unimportant"],
+                    answer: 0
+                },
+                {
+                    question: "Which word is an example of an onomatopoeia?",
+                    options: ["Buzz", "Walk", "Quiet", "Think"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following is NOT a common text structure?",
+                    options: ["Chronological", "Cause and effect", "Argumentative", "Color-coded"],
+                    answer: 3
+                },
+                {
+                    question: "What is an author's bias?",
+                    options: ["A preference or opinion that influences writing", "The order of paragraphs", "The title of a passage", "The punctuation used"],
+                    answer: 0
+                },
+                {
+                    question: "Which of these words signals an effect in a cause-effect relationship?",
+                    options: ["As a result", "Before", "Similarly", "Even though"],
+                    answer: 0
+                },
+                {
+                    question: "What does 'summarizing' mean?",
+                    options: ["Condensing key points into a shorter version", "Adding more details to a story", "Repeating everything word-for-word", "Skipping the important parts"],
+                    answer: 0
+                },
+                {
+                    question: "Which literary device compares two unlike things using 'like' or 'as'?",
+                    options: ["Simile", "Metaphor", "Personification", "Hyperbole"],
+                    answer: 0
+                },
+                {
+                    question: "What type of passage presents a problem and provides solutions?",
+                    options: ["Problem-solution", "Chronological", "Descriptive", "Compare and contrast"],
+                    answer: 0
+                },
+                {
+                    question: "Which phrase indicates a comparison?",
+                    options: ["In the same way", "For example", "As a result", "Despite that"],
+                    answer: 0
+                },
+                {
+                    question: "What is the best way to infer meaning from an unknown word?",
+                    options: ["Use context clues from surrounding sentences", "Skip the word", "Guess randomly", "Change the sentence"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following is an opinion rather than a fact?",
+                    options: ["Dogs are friendlier than cats", "The Earth revolves around the sun", "Water freezes at 0°C", "There are seven continents"],
+                    answer: 0
+                },
+                {
+                    question: "What is the function of a transition word in a passage?",
+                    options: ["To connect ideas smoothly", "To confuse the reader", "To replace the title", "To make a passage longer"],
+                    answer: 0
+                },
+                {
+                    question: "What does 'imply' mean?",
+                    options: ["To suggest something indirectly", "To state something clearly", "To argue a point", "To summarize a story"],
+                    answer: 0
+                },
+                {
+                    question: "Which of these is a primary source?",
+                    options: ["A diary entry from a historical figure", "A summary in a textbook", "A Wikipedia article", "A documentary"],
+                    answer: 0
+                },
+                {
+                    question: "What is the best way to analyze an argument in a passage?",
+                    options: ["Check for evidence supporting the claims", "Ignore the main idea", "Count the number of paragraphs", "Read only the introduction"],
+                    answer: 0
+                },
+                {
+                    question: "What is a metaphor?",
+                    options: ["A direct comparison without using 'like' or 'as'", "An exaggeration", "A contradiction", "A question without an answer"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following is an example of irony?",
+                    options: ["A firefighter’s house catching fire", "A sun rising in the morning", "Water being wet", "A math teacher solving equations"],
+                    answer: 0
+                },
+                                {
+                    question: "Which part of a passage usually contains the main idea?",
+                    options: ["Introduction", "Middle paragraph", "Last sentence", "Footnote"],
+                    answer: 0
+                },
+                {
+                    question: "What is the purpose of a rhetorical question in a passage?",
+                    options: ["To make the reader think", "To get an answer", "To change the topic", "To end a discussion"],
+                    answer: 0
+                },
+                {
+                    question: "Which of these sentences is an example of cause and effect?",
+                    options: ["It was raining, so we stayed inside.", "I like to read books.", "The cat is sleeping on the couch.", "She bought a new dress for the party."],
+                    answer: 0
+                },
+                {
+                    question: "What does the word 'ambiguous' mean?",
+                    options: ["Having more than one possible meaning", "Clearly stated", "Easy to understand", "Only used in legal writing"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following is an example of foreshadowing?",
+                    options: ["A storm cloud appearing before a disaster", "A character saying 'goodbye' before leaving", "A surprising plot twist", "A happy ending"],
+                    answer: 0
+                },
+                {
+                    question: "What is an antonym for the word 'abundant'?",
+                    options: ["Scarce", "Plentiful", "Sufficient", "Bountiful"],
+                    answer: 0
+                },
+                {
+                    question: "Which word is a homophone?",
+                    options: ["Their", "There", "They're", "All of the above"],
+                    answer: 3
+                },
+                {
+                    question: "Which of these best defines a paradox?",
+                    options: ["A statement that contradicts itself but might be true", "An exaggerated statement", "A sentence that asks a question", "A long description"],
+                    answer: 0
+                },
+                {
+                    question: "What is an idiom?",
+                    options: ["A phrase that has a meaning different from its words", "A long sentence", "A sentence without a verb", "A scientific term"],
+                    answer: 0
+                },
+                {
+                    question: "What does the word 'depict' mean?",
+                    options: ["To describe or show something", "To argue against something", "To hide something", "To misunderstand something"],
+                    answer: 0
+                },
+                {
+                    question: "Which sentence contains a simile?",
+                    options: ["She was as fast as a cheetah.", "He is the king of the jungle.", "The wind whispered in my ear.", "The stars danced in the sky."],
+                    answer: 0
+                },
+                {
+                    question: "What is an author's purpose if they are trying to convince the reader?",
+                    options: ["To persuade", "To inform", "To entertain", "To describe"],
+                    answer: 0
+                },
+                {
+                    question: "What does 'context clues' refer to?",
+                    options: ["Hints in the text that help determine a word’s meaning", "The main idea of a story", "The moral of a story", "The conclusion of an essay"],
+                    answer: 0
+                },
+                {
+                    question: "Which word means the opposite of 'conclude'?",
+                    options: ["Begin", "Finish", "End", "Summarize"],
+                    answer: 0
+                },
+                {
+                    question: "What is an alliteration?",
+                    options: ["A repetition of consonant sounds", "A question with no answer", "A character’s thoughts", "A long sentence"],
+                    answer: 0
+                },
+                {
+                    question: "What is the difference between a fact and an opinion?",
+                    options: ["A fact can be proven, while an opinion is based on belief", "They mean the same thing", "An opinion is always correct", "A fact is always negative"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following is an example of chronological order?",
+                    options: ["First, he woke up; then, he ate breakfast.", "The sun is bright.", "Cats are very independent animals.", "I love going to the beach."],
+                    answer: 0
+                },
+                {
+                    question: "What is a synonym for 'fragile'?",
+                    options: ["Delicate", "Strong", "Heavy", "Thick"],
+                    answer: 0
+                },
+                {
+                    question: "What type of passage compares two things?",
+                    options: ["Compare and contrast", "Cause and effect", "Narrative", "Expository"],
+                    answer: 0
+                },
+                {
+                    question: "Which sentence contains hyperbole?",
+                    options: ["I've told you a million times!", "The grass is green.", "The moon was full last night.", "We walked to the store yesterday."],
+                    answer: 0
+                },
+                                {
+                    question: "What does the word 'contemplate' mean?",
+                    options: ["To think deeply about something", "To talk about something", "To ignore something", "To act quickly"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following is an example of a metaphor?",
+                    options: ["The world is a stage.", "She ran as fast as a cheetah.", "The fog rolled in like a blanket.", "He was as quiet as a mouse."],
+                    answer: 0
+                },
+                {
+                    question: "What is the purpose of a transition word in writing?",
+                    options: ["To connect ideas and show relationships between them", "To end a paragraph", "To add humor", "To introduce new topics"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following is a sign of an objective tone?",
+                    options: ["It presents facts without personal feelings", "It uses humor and exaggeration", "It expresses a personal viewpoint", "It makes emotional appeals"],
+                    answer: 0
+                },
+                {
+                    question: "Which is an example of an imperative sentence?",
+                    options: ["Please close the door.", "She went to the store.", "The weather is nice today.", "I wonder if it's going to rain."],
+                    answer: 0
+                },
+                {
+                    question: "What does the term 'genre' refer to?",
+                    options: ["The category of a literary work", "The main idea of a story", "The setting of a book", "The author’s purpose"],
+                    answer: 0
+                },
+                {
+                    question: "Which of these sentences uses an adjective?",
+                    options: ["The red car is fast.", "The car drove fast.", "He runs every morning.", "She ate quickly."],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following best describes the tone of a piece of writing?",
+                    options: ["The attitude or mood conveyed by the writer", "The setting of the story", "The events in the plot", "The character’s actions"],
+                    answer: 0
+                },
+                {
+                    question: "What is the purpose of a hook in an introduction?",
+                    options: ["To capture the reader's attention", "To conclude the paragraph", "To provide background information", "To introduce new ideas"],
+                    answer: 0
+                },
+                {
+                    question: "What is the meaning of the phrase 'break the ice'?",
+                    options: ["To start a conversation and reduce tension", "To cause an accident", "To win an argument", "To break something fragile"],
+                    answer: 0
+                },
+                {
+                    question: "What is an example of a complex sentence?",
+                    options: ["Although she was tired, she finished the project.", "She finished the project.", "He likes pizza.", "The cat ran outside."],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following best defines a colloquial expression?",
+                    options: ["An informal or everyday expression", "A formal phrase", "A scientific term", "A historical event"],
+                    answer: 0
+                },
+                {
+                    question: "What does the word 'synonym' mean?",
+                    options: ["A word with the same meaning as another word", "A word with the opposite meaning", "A type of punctuation", "A word that describes an action"],
+                    answer: 0
+                },
+                {
+                    question: "What is the primary purpose of an expository essay?",
+                    options: ["To explain or inform about a topic", "To entertain with a story", "To argue a viewpoint", "To describe a process"],
+                    answer: 0
+                },
+                {
+                    question: "Which of these is a sign of a persuasive tone?",
+                    options: ["It tries to convince the reader of a particular point of view", "It provides background information", "It narrates a story", "It describes a scene in detail"],
+                    answer: 0
+                },
+                {
+                    question: "What is a common feature of a descriptive passage?",
+                    options: ["It paints a vivid picture using sensory details", "It argues a point of view", "It lists facts", "It compares two things"],
+                    answer: 0
+                },
+                {
+                    question: "What does 'clarify' mean?",
+                    options: ["To make something easier to understand", "To confuse", "To argue", "To ignore"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following is a connotation of the word 'home'?",
+                    options: ["Comfort and safety", "Building", "House", "Property"],
+                    answer: 0
+                },
+                {
+                    question: "Which of these sentences is a compound sentence?",
+                    options: ["She went to the store, and he stayed at home.", "I like pizza.", "She walked quickly.", "The sun is shining."],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following is an example of irony?",
+                    options: ["A fire station burns down", "The sun is shining on a rainy day", "A teacher failing an exam", "All of the above"],
+                    answer: 3
+                },
+                                {
+                    question: "What is the definition of 'antonym'?",
+                    options: ["A word with the opposite meaning of another", "A word with the same meaning", "A word that rhymes", "A word that describes an action"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following is an example of a simile?",
+                    options: ["She is as busy as a bee.", "The world is a stage.", "He has a heart of gold.", "Time is a thief."],
+                    answer: 0
+                },
+                {
+                    question: "What is the meaning of the word 'empathy'?",
+                    options: ["The ability to understand and share another person's feelings", "The ability to reason logically", "A lack of feeling", "The ability to make decisions quickly"],
+                    answer: 0
+                },
+                {
+                    question: "Which of these sentences uses an adverb?",
+                    options: ["He sings beautifully.", "The dog barked.", "She ran to the store.", "The children played outside."],
+                    answer: 0
+                },
+                {
+                    question: "What does the word 'mood' refer to in literature?",
+                    options: ["The emotional atmosphere of a story", "The time and place of the story", "The plot of the story", "The moral lesson of the story"],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following is an example of an idiom?",
+                    options: ["It’s raining cats and dogs.", "She has a heart of gold.", "The book is on the table.", "He walked to the store."],
+                    answer: 0
+                },
+                {
+                    question: "What is the meaning of the word 'perspective'?",
+                    options: ["A particular attitude toward or way of regarding something", "A direct cause of an event", "A plot twist in a story", "A kind of literary device"],
+                    answer: 0
+                },
+                {
+                    question: "Which of these words is an example of a conjunction?",
+                    options: ["And", "Quickly", "Happily", "Dark"],
+                    answer: 0
+                },
+                {
+                    question: "What is a 'character trait' in literature?",
+                    options: ["A quality that defines a character's personality", "The physical appearance of a character", "The character's actions in the plot", "The character's backstory"],
+                    answer: 0
+                },
+                {
+                    question: "Which sentence uses passive voice?",
+                    options: ["The book was read by Mary.", "Mary read the book.", "She will read the book.", "Mary reads the book."],
+                    answer: 0
+                },
+                {
+                    question: "Which of the following is an example of hyperbole?",
+                    options: ["I’ve told you a million times.", "She is as fast as lightning.", "He jumped high like a kangaroo.", "It was as cold as ice."],
+                    answer: 0
+                },
+                {
+                    question: "What does the word 'intrigue' mean?",
+                    options: ["To fascinate or arouse curiosity", "To argue or dispute", "To entertain", "To feel uninterested"],
+                    answer: 0
+                },
+                {
+                    question: "Which of these is an example of a declarative sentence?",
+                    options: ["I wonder if it will rain.", "Close the door.", "She is reading a book.", "Can you help me?"],
+                    answer: 2
+                },
+                {
+                    question: "What is the purpose of a metaphor in writing?",
+                    options: ["To compare two things without using 'like' or 'as'", "To make a statement of fact", "To describe something using sensory details", "To state an opinion"],
+                    answer: 0
+                },
+                {
+                    question: "What is the definition of 'climax' in a story?",
+                    options: ["The most intense point of the story", "The introduction of the plot", "The resolution of the story", "The beginning of the conflict"],
+                    answer: 0
+                },
+                {
+                    question: "What is the primary purpose of a thesis statement?",
+                    options: ["To state the main idea or argument of an essay", "To introduce a character", "To provide background information", "To summarize the plot"],
+                    answer: 0
+                },
+                {
+                    question: "Which sentence contains an example of personification?",
+                    options: ["The wind whispered through the trees.", "The sun was shining brightly.", "He ran to catch the bus.", "She sang a beautiful song."],
+                    answer: 0
+                },
+                {
+                    question: "What does the word 'succinct' mean?",
+                    options: ["Brief and clear", "Excessively long", "Full of details", "Confusing and unclear"],
+                    answer: 0
+                },
+                {
+                    question: "What is the purpose of a supporting detail in a paragraph?",
+                    options: ["To explain or elaborate on the main idea", "To introduce a new topic", "To conclude the paragraph", "To make the paragraph more complex"],
+                    answer: 0
+                },
+                {
+                    question: "What does the phrase 'turn a blind eye' mean?",
+                    options: ["To ignore something intentionally", "To look away quickly", "To avoid making decisions", "To consider all options carefully"],
+                    answer: 0
+                }
     ],
-    "idioms-phrases": [
+    idioms: [
         {
             "question": "What does the idiom 'paint the town red' mean?",
             "options": ["To go out and celebrate", "To decorate a building", "To stay home", "To be angry"],
@@ -2460,7 +3525,952 @@
             "question": "What does the phrase 'break the ice' mean?",
             "options": ["To break something physically", "To start a conversation", "To end an argument", "To destroy a relationship"],
             "answer": 1
-        }
+        },
+        {
+    "question": "What does the idiom 'break the ice' mean?",
+    "options": ["To start a conversation", "To break something physically", "To end a relationship", "To stop talking"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'hit the nail on the head' mean?",
+    "options": ["To make a mistake", "To make a precise point", "To work hard", "To avoid responsibility"],
+    "answer": 1
+},
+{
+    "question": "What does the idiom 'let the cat out of the bag' mean?",
+    "options": ["To keep a secret", "To reveal a secret by accident", "To give up", "To stop worrying"],
+    "answer": 1
+},
+{
+    "question": "What does the idiom 'under the weather' mean?",
+    "options": ["Feeling sick", "Feeling happy", "Feeling confused", "Feeling lost"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'burn the midnight oil' mean?",
+    "options": ["To study late", "To eat late at night", "To stay up late socializing", "To work hard in the morning"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'a piece of cake' mean?",
+    "options": ["Something difficult", "Something easy", "A literal slice of cake", "A complicated task"],
+    "answer": 1
+},
+{
+    "question": "What does the idiom 'kick the bucket' mean?",
+    "options": ["To go on vacation", "To die", "To start a project", "To fail at something"],
+    "answer": 1
+},
+{
+    "question": "What does the idiom 'barking up the wrong tree' mean?",
+    "options": ["To do something correctly", "To misdirect efforts", "To be quiet", "To find the right solution"],
+    "answer": 1
+},
+{
+    "question": "What does the idiom 'cost an arm and a leg' mean?",
+    "options": ["To be very cheap", "To be very expensive", "To hurt yourself", "To be very difficult"],
+    "answer": 1
+},
+{
+    "question": "What does the idiom 'the ball is in your court' mean?",
+    "options": ["The situation is in your control", "The game is over", "You need to leave", "You have to stop now"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'spilling the beans' mean?",
+    "options": ["To keep a secret", "To accidentally reveal information", "To make a mess", "To celebrate a success"],
+    "answer": 1
+},
+{
+    "question": "What does the idiom 'beat around the bush' mean?",
+    "options": ["To avoid giving a direct answer", "To help someone", "To explain something clearly", "To get to the point quickly"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'hit the sack' mean?",
+    "options": ["To go to bed", "To work hard", "To get a promotion", "To wake up early"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'pulling someone's leg' mean?",
+    "options": ["To tell the truth", "To tease someone in a playful way", "To give someone advice", "To be serious about something"],
+    "answer": 1
+},
+{
+    "question": "What does the idiom 'when pigs fly' mean?",
+    "options": ["Something that is very likely to happen", "Something that is impossible", "A good event", "Something that is rare but possible"],
+    "answer": 1
+},
+{
+    "question": "What does the idiom 'a dime a dozen' mean?",
+    "options": ["Something very rare", "Something very expensive", "Something very common", "Something very special"],
+    "answer": 2
+},
+{
+    "question": "What does the idiom 'cry over spilled milk' mean?",
+    "options": ["To let go of past mistakes", "To make a mess", "To express happiness", "To complain about something that can't be undone"],
+    "answer": 3
+},
+{
+    "question": "What does the idiom 'a blessing in disguise' mean?",
+    "options": ["Something that looks bad at first but is actually good", "Something that brings bad luck", "A hidden opportunity", "A fortunate situation"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'on cloud nine' mean?",
+    "options": ["Feeling very happy", "Feeling very sad", "Feeling very confused", "Feeling very tired"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'throw in the towel' mean?",
+    "options": ["To surrender or give up", "To start a new project", "To make a mistake", "To fight back"],
+    "answer": 0
+},
+        {
+    "question": "What does the idiom 'a bird in the hand is worth two in the bush' mean?",
+    "options": ["It's better to hold onto what you have than risk losing it for something more uncertain", "A bird in the hand is always more valuable than a fish in the sea", "Having more options is always better than having fewer", "Sometimes you need to let go of the old to make space for the new"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'don't count your chickens before they hatch' mean?",
+    "options": ["Don't assume something will happen until it actually does", "Don't plan ahead", "Don't eat too many eggs", "Don't ignore opportunities"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'the early bird catches the worm' mean?",
+    "options": ["Those who wake up early are more likely to succeed", "The bird is the first one to eat", "Being early is rude", "The worm is always the first to be eaten"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'burning the candle at both ends' mean?",
+    "options": ["To work excessively without rest", "To enjoy both ends of a situation", "To balance work and leisure", "To be very organized"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'go the extra mile' mean?",
+    "options": ["To do more than what is expected", "To take a long journey", "To go through difficulties", "To avoid responsibility"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'a leopard can't change its spots' mean?",
+    "options": ["People can't change their inherent nature", "People can become more like animals", "Spots on a leopard are permanent", "A leopard always gets caught"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'a watched pot never boils' mean?",
+    "options": ["Time seems to move slower when you're waiting for something", "A pot never boils without water", "It’s pointless to watch something that is taking time", "Boiling requires constant attention"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'no pain, no gain' mean?",
+    "options": ["You can't achieve success without hard work", "Pain is always necessary for growth", "The more pain you experience, the better", "You should avoid pain to be happy"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'to have a chip on your shoulder' mean?",
+    "options": ["To be upset or angry about something", "To carry a heavy burden", "To show confidence", "To focus on the past"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'get cold feet' mean?",
+    "options": ["To suddenly become afraid", "To get physically cold", "To be unsure of something", "To change your mind quickly"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'put all your eggs in one basket' mean?",
+    "options": ["To risk everything on a single venture", "To rely on many options", "To take a chance", "To trust others"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'go down in flames' mean?",
+    "options": ["To fail spectacularly", "To succeed in a big way", "To burn something", "To fall asleep quickly"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'the ball is in your court' mean?",
+    "options": ["It's your turn to make a decision", "You need to start a new project", "It's someone else's responsibility now", "The game is over"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'cry wolf' mean?",
+    "options": ["To give a false alarm", "To cry for help", "To cause a scene", "To warn others of danger"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'hold your horses' mean?",
+    "options": ["To be patient", "To rush into something", "To hold something tightly", "To act impulsively"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'let sleeping dogs lie' mean?",
+    "options": ["Don’t stir up old problems", "Dogs should be left alone", "Let others do their work", "Solve problems right away"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'cost a pretty penny' mean?",
+    "options": ["To be expensive", "To be affordable", "To cost a lot of time", "To cost little effort"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'hit the ground running' mean?",
+    "options": ["To start something with great energy and enthusiasm", "To trip or fall immediately", "To begin something slowly", "To run into obstacles right away"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'out of the blue' mean?",
+    "options": ["Something unexpected", "A bright sunny day", "Something obvious", "A calm and peaceful situation"],
+    "answer": 0
+},
+        {
+    "question": "What does the idiom 'break the ice' mean?",
+    "options": ["To initiate a conversation", "To break something physically", "To end a relationship", "To make a situation worse"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'hit the nail on the head' mean?",
+    "options": ["To describe something exactly right", "To make a mistake", "To work very hard", "To hurt someone’s feelings"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'under the weather' mean?",
+    "options": ["Feeling unwell", "Living in a bad environment", "Going through a storm", "Staying outside for a long time"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'in hot water' mean?",
+    "options": ["In trouble", "In a difficult situation", "In a pleasant condition", "In an unheated space"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'the tip of the iceberg' mean?",
+    "options": ["A small part of a larger issue", "A major problem", "Something very difficult", "A disaster waiting to happen"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'put the cart before the horse' mean?",
+    "options": ["To do things in the wrong order", "To act lazily", "To be overly careful", "To take unnecessary risks"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'kill two birds with one stone' mean?",
+    "options": ["To achieve two objectives with a single effort", "To hurt two people", "To waste time", "To solve a difficult problem quickly"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'call it a day' mean?",
+    "options": ["To stop working for the day", "To start a new project", "To celebrate an achievement", "To work continuously"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'a penny for your thoughts' mean?",
+    "options": ["What are you thinking?", "It’s very cheap", "Do you want to speak?", "You owe me money"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'to pull someone's leg' mean?",
+    "options": ["To tease or joke with someone", "To literally pull someone's leg", "To deceive someone", "To insult someone"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'an arm and a leg' mean?",
+    "options": ["Something very expensive", "Something that is easy to achieve", "To lose a small amount", "To gain something valuable"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'the ball is in your court' mean?",
+    "options": ["It’s your turn to take action", "The game is over", "You missed your chance", "The situation is out of control"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'on cloud nine' mean?",
+    "options": ["Very happy", "Feeling confused", "In a serious situation", "Very tired"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'the whole nine yards' mean?",
+    "options": ["Everything", "Something difficult", "A small part", "A particular section"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'a stitch in time saves nine' mean?",
+    "options": ["It’s better to fix a problem right away", "A small effort is always sufficient", "Time is not important", "Problems tend to multiply with time"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'by the book' mean?",
+    "options": ["To follow the rules exactly", "To be creative", "To work quickly", "To be informal"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'cost an arm and a leg' mean?",
+    "options": ["To be very expensive", "To be very affordable", "To make a small sacrifice", "To make a huge profit"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'get your act together' mean?",
+    "options": ["To get organized or improve", "To start a performance", "To relax", "To be selfish"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'hit the sack' mean?",
+    "options": ["To go to sleep", "To make a mistake", "To relax", "To start work"],
+    "answer": 0
+},
+        {
+    "question": "What does the idiom 'a blessing in disguise' mean?",
+    "options": ["A good thing that seemed bad at first", "A bad situation", "A divine intervention", "A sudden fortune"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'beat around the bush' mean?",
+    "options": ["To avoid talking about something", "To tell the truth directly", "To gossip", "To act rudely"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'barking up the wrong tree' mean?",
+    "options": ["To make a false assumption", "To shout at someone", "To try a different approach", "To praise someone wrongly"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'cry over spilled milk' mean?",
+    "options": ["To be upset about something that can’t be undone", "To enjoy something sweet", "To complain about a mistake", "To clean up a mess"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'don’t count your chickens before they hatch' mean?",
+    "options": ["Don’t assume something will happen before it does", "Don’t be impatient", "Don’t celebrate early", "Don’t ignore small tasks"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'hit the ground running' mean?",
+    "options": ["To start something quickly and energetically", "To make a sudden stop", "To fall down", "To become exhausted"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'jump the gun' mean?",
+    "options": ["To start something too early", "To take a risk", "To make an important decision", "To work too quickly"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'let the cat out of the bag' mean?",
+    "options": ["To reveal a secret", "To get a cat", "To avoid a problem", "To create confusion"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'make a mountain out of a molehill' mean?",
+    "options": ["To exaggerate a small problem", "To fix something small", "To create a big problem", "To solve a difficult problem"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'once in a blue moon' mean?",
+    "options": ["Very rarely", "Frequently", "Every month", "When the sky is clear"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'on the ball' mean?",
+    "options": ["Alert and efficient", "Making a mistake", "Tired", "Confused"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'pull yourself together' mean?",
+    "options": ["To calm down and regain control", "To pull something physically", "To have a breakdown", "To be successful"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'put all your eggs in one basket' mean?",
+    "options": ["To risk everything on one venture", "To gather everything together", "To be overly cautious", "To break something fragile"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'read between the lines' mean?",
+    "options": ["To understand something not explicitly stated", "To read a lot", "To write something between lines", "To interpret information literally"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'spilled the beans' mean?",
+    "options": ["To reveal a secret", "To make a mistake", "To make something messy", "To cause a problem"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'take it with a grain of salt' mean?",
+    "options": ["To not take something too seriously", "To accept everything", "To taste something carefully", "To doubt everything"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'the ball is in your court' mean?",
+    "options": ["It’s your turn to make a decision", "It’s too late to change anything", "The situation is out of your control", "You made a mistake"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'under the table' mean?",
+    "options": ["Done secretly or illegally", "In a hidden place", "Under the furniture", "Unnoticed"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'wear your heart on your sleeve' mean?",
+    "options": ["To openly show your feelings", "To dress carelessly", "To be secretive", "To hide your emotions"],
+    "answer": 0
+},
+        {
+    "question": "What does the idiom 'a penny for your thoughts' mean?",
+    "options": ["To ask someone what they are thinking", "To offer money", "To keep a secret", "To value someone’s opinion"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'a picture is worth a thousand words' mean?",
+    "options": ["A visual image can convey complex ideas", "Pictures are more valuable than words", "Words are unnecessary", "Pictures can be misleading"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'an arm and a leg' mean?",
+    "options": ["Something very expensive", "A physical injury", "A part of the body", "To make a sacrifice"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'back to the drawing board' mean?",
+    "options": ["To start something over again", "To finish a task", "To review a plan", "To finish a project"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'beyond the pale' mean?",
+    "options": ["Outside of acceptable behavior", "Beyond what is necessary", "A little bit out of reach", "Very far away"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'better late than never' mean?",
+    "options": ["It’s better to do something late than not at all", "Doing things early is better", "Late is the best time", "Don’t worry about being on time"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'burning the midnight oil' mean?",
+    "options": ["To work late into the night", "To waste time", "To relax at night", "To stay awake for fun"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'by the book' mean?",
+    "options": ["To do something according to the rules", "To follow your instincts", "To be creative", "To read a book"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'cut to the chase' mean?",
+    "options": ["To get to the point", "To avoid the main topic", "To make a quick decision", "To cut something short"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'don’t cry wolf' mean?",
+    "options": ["Don’t raise a false alarm", "Don’t cry for help", "Don’t overreact", "Don’t lie about a situation"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'get cold feet' mean?",
+    "options": ["To get nervous or scared", "To cool down", "To wear new shoes", "To get tired"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'hit the nail on the head' mean?",
+    "options": ["To describe exactly what is causing a situation", "To do something perfectly", "To make a mistake", "To complete something"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'in the same boat' mean?",
+    "options": ["In the same situation", "In a rowboat", "In different situations", "In a group of people"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'it’s not rocket science' mean?",
+    "options": ["It’s not difficult to understand", "It’s a highly complex task", "It’s a challenging subject", "It’s beyond understanding"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'kill two birds with one stone' mean?",
+    "options": ["To achieve two objectives with a single action", "To harm animals", "To complete two tasks", "To solve a problem quickly"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'let sleeping dogs lie' mean?",
+    "options": ["To avoid restarting old conflicts", "To allow peace", "To pet animals", "To ignore problems"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'make a long story short' mean?",
+    "options": ["To summarize", "To make a story longer", "To talk a lot", "To tell everything in detail"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'off the beaten track' mean?",
+    "options": ["Away from the usual path or route", "To follow a popular trend", "To take a shortcut", "To explore new places"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'out of the blue' mean?",
+    "options": ["Unexpectedly", "From the sky", "At a predictable time", "In a strange manner"],
+    "answer": 0
+},
+        {
+    "question": "What does the idiom 'a blessing in disguise' mean?",
+    "options": ["A hidden benefit", "A curse in a new form", "A fortune", "An unexpected good event"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'a dime a dozen' mean?",
+    "options": ["Something very common and easy to find", "Something extremely rare", "Something of high value", "Something expensive"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'add fuel to the fire' mean?",
+    "options": ["To make a situation worse", "To calm things down", "To start something new", "To help out"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'bite the bullet' mean?",
+    "options": ["To do something painful but necessary", "To fight back", "To make a quick decision", "To give up"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'break the ice' mean?",
+    "options": ["To initiate conversation in an awkward situation", "To start a physical fight", "To cause a problem", "To create a challenge"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'burn the candle at both ends' mean?",
+    "options": ["To work excessively hard", "To relax for long hours", "To focus on one thing", "To save energy"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'call it a day' mean?",
+    "options": ["To stop working for the day", "To begin work", "To change your mind", "To start something new"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'caught between a rock and a hard place' mean?",
+    "options": ["To be in a difficult situation with no good solution", "To be physically stuck", "To be very comfortable", "To face a decision with many options"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'cry over spilled milk' mean?",
+    "options": ["To waste time worrying about something that cannot be fixed", "To take care of things immediately", "To be upset over something unimportant", "To apologize for a mistake"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'cut corners' mean?",
+    "options": ["To do something poorly to save time or money", "To make extra effort", "To follow the rules", "To start something new"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'don’t put all your eggs in one basket' mean?",
+    "options": ["Don’t risk everything on one plan", "Don’t carry too many things", "Don’t focus on one person", "Don’t make big decisions"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'get a taste of your own medicine' mean?",
+    "options": ["To experience something negative that you’ve done to others", "To enjoy success", "To receive a gift", "To give someone a treat"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'hit the sack' mean?",
+    "options": ["To go to bed", "To start a fight", "To end a meeting", "To begin a project"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'in the heat of the moment' mean?",
+    "options": ["During a time of high emotion", "When it’s very hot outside", "During a calm period", "In a serious situation"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'keep your fingers crossed' mean?",
+    "options": ["To hope for good luck", "To wait patiently", "To promise something", "To keep a secret"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'let the cat out of the bag' mean?",
+    "options": ["To reveal a secret", "To start a fight", "To let someone in", "To show something special"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'make a mountain out of a molehill' mean?",
+    "options": ["To exaggerate a small problem", "To be overly cautious", "To ignore small details", "To make something easier than it is"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'once in a blue moon' mean?",
+    "options": ["Very rarely", "On a special occasion", "Every once in a while", "Frequently"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'out of the frying pan and into the fire' mean?",
+    "options": ["To go from a bad situation to a worse one", "To leave the comfort zone", "To solve a problem", "To experience improvement"],
+    "answer": 0
+},
+        {
+    "question": "What does the idiom 'the ball is in your court' mean?",
+    "options": ["It’s your turn to make a decision", "You have lost control", "You are not in charge", "You are waiting for someone else’s decision"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'under the weather' mean?",
+    "options": ["To feel ill", "To be in a good mood", "To be outside in the rain", "To be in a dangerous situation"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'when pigs fly' mean?",
+    "options": ["Something that will never happen", "A lucky event", "Something possible but rare", "A strange event"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'a stitch in time saves nine' mean?",
+    "options": ["Fix problems early to avoid bigger issues", "Doing things quickly leads to mistakes", "Work only when necessary", "Making small adjustments makes no difference"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'back to square one' mean?",
+    "options": ["To start over from the beginning", "To make quick progress", "To reach the end goal", "To change your mind"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'barking up the wrong tree' mean?",
+    "options": ["To pursue a wrong course of action", "To make noise", "To help others", "To ignore advice"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'beat around the bush' mean?",
+    "options": ["To avoid getting to the point", "To talk directly", "To explain things clearly", "To ignore the subject"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'bent out of shape' mean?",
+    "options": ["To be upset or angry", "To become flexible", "To take things lightly", "To remain calm"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'burning the midnight oil' mean?",
+    "options": ["To stay up late working", "To waste time", "To work efficiently during the day", "To relax at night"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'caught red-handed' mean?",
+    "options": ["To be caught in the act of doing something wrong", "To be punished", "To make a mistake", "To be innocent"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'cross that bridge when you come to it' mean?",
+    "options": ["Deal with a problem when it happens", "Worry about things ahead of time", "Solve a problem in advance", "Avoid problems altogether"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'cry wolf' mean?",
+    "options": ["To make false alarms", "To complain unnecessarily", "To cry for help", "To express sadness"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'cut to the chase' mean?",
+    "options": ["To get to the point quickly", "To delay something", "To take unnecessary steps", "To explain in detail"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'don’t cry over spilled milk' mean?",
+    "options": ["Don’t waste time regretting things that can’t be changed", "Don’t waste milk", "Don’t cry in general", "Don’t focus on small issues"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'don’t judge a book by its cover' mean?",
+    "options": ["Don’t judge something based on its appearance", "Always read books carefully", "Books are the best source of knowledge", "Appearance is everything"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'don’t put all your eggs in one basket' mean?",
+    "options": ["Don’t risk everything on one plan", "Don’t carry too many things", "Don’t focus on one person", "Don’t make big decisions"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'draw the line' mean?",
+    "options": ["To set a limit or boundary", "To draw pictures", "To keep going", "To stop doing something"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'every cloud has a silver lining' mean?",
+    "options": ["There is always something positive in a bad situation", "Everything will stay dark", "Good things come from good actions", "Clouds are good for the environment"],
+    "answer": 0
+},
+        {
+    "question": "What does the idiom 'face the music' mean?",
+    "options": ["To accept responsibility for one's actions", "To avoid confrontation", "To attend a concert", "To ignore the consequences"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'fool’s gold' mean?",
+    "options": ["Something that seems valuable but is actually worthless", "Real gold", "A rare treasure", "A valuable discovery"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'get a taste of your own medicine' mean?",
+    "options": ["To experience something negative that you have done to others", "To learn a new skill", "To receive praise", "To help others"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'give someone the cold shoulder' mean?",
+    "options": ["To deliberately ignore someone", "To offer someone a drink", "To comfort someone", "To welcome someone warmly"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'go the extra mile' mean?",
+    "options": ["To put in extra effort", "To travel a long distance", "To take a shortcut", "To rest when tired"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'hit the nail on the head' mean?",
+    "options": ["To be exactly right about something", "To cause an injury", "To start working", "To make a mistake"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'in hot water' mean?",
+    "options": ["To be in trouble", "To relax in a hot bath", "To be comfortable", "To be in a dangerous situation"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'keep your fingers crossed' mean?",
+    "options": ["To hope for good luck", "To wish someone bad luck", "To hold something tightly", "To make a secret wish"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'let the cat out of the bag' mean?",
+    "options": ["To reveal a secret", "To let a cat escape", "To act carelessly", "To take responsibility"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'lose your touch' mean?",
+    "options": ["To lose your skill or ability", "To become more talented", "To lose a possession", "To lose interest"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'miss the boat' mean?",
+    "options": ["To miss an opportunity", "To miss a transport", "To be late for a meeting", "To lose interest"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'my hands are tied' mean?",
+    "options": ["I am unable to help", "I am ready to act", "I am waiting for someone else", "I am too busy to work"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'off the beaten path' mean?",
+    "options": ["To do something unconventional", "To follow a well-known route", "To take a break", "To act recklessly"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'on thin ice' mean?",
+    "options": ["To be in a risky or dangerous situation", "To be walking on ice", "To feel cold", "To take a chance"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'out of the blue' mean?",
+    "options": ["Unexpectedly", "From the sky", "At night", "In a calm situation"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'put all your eggs in one basket' mean?",
+    "options": ["To risk everything on one plan", "To be organized", "To save money", "To avoid risk"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'rain on someone's parade' mean?",
+    "options": ["To spoil someone's plans or happiness", "To offer help", "To celebrate with someone", "To organize a party"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'roll with the punches' mean?",
+    "options": ["To adapt to difficulties", "To be stubborn", "To avoid challenges", "To fight back"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'saved by the bell' mean?",
+    "options": ["To escape a situation at the last moment", "To hear a phone ring", "To be victorious", "To be saved from a mistake"],
+    "answer": 0
+},
+        {
+    "question": "What does the idiom 'a blessing in disguise' mean?",
+    "options": ["Something that seems bad but turns out to be good", "A hidden treasure", "A miraculous event", "A sudden disaster"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'a dime a dozen' mean?",
+    "options": ["Something that is very common", "Something very expensive", "Something rare", "A small quantity"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'a fish out of water' mean?",
+    "options": ["Someone who feels uncomfortable in an unfamiliar situation", "A person who is calm and relaxed", "A person who is in their natural environment", "A person who is very skilled"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'all ears' mean?",
+    "options": ["To be fully attentive", "To be gossiping", "To be uninterested", "To be confused"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'beat around the bush' mean?",
+    "options": ["To avoid talking directly about a topic", "To talk about everything except the main topic", "To speak loudly", "To clarify something"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'beyond the pale' mean?",
+    "options": ["Outside acceptable behavior", "Beyond expectations", "To be close to something", "Within the acceptable limits"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'bite the bullet' mean?",
+    "options": ["To do something painful or unpleasant", "To argue with someone", "To avoid responsibility", "To refuse to participate"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'break the ice' mean?",
+    "options": ["To initiate conversation and make people feel comfortable", "To break a physical object", "To cause trouble", "To end a conversation"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'burn the midnight oil' mean?",
+    "options": ["To work late into the night", "To burn something", "To relax at night", "To work during the day"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'call it a day' mean?",
+    "options": ["To stop working for the day", "To start working", "To make an important decision", "To continue working"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'chip off the old block' mean?",
+    "options": ["A child who resembles their parent", "A small mistake", "A rebellious child", "A new and improved version of something"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'close but no cigar' mean?",
+    "options": ["Almost successful but not quite", "A perfect success", "Close in distance", "An unexpected event"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'cross that bridge when you come to it' mean?",
+    "options": ["To deal with a problem when it arises", "To avoid dealing with a problem", "To solve a problem in advance", "To travel to a place"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'cut corners' mean?",
+    "options": ["To do something badly or cheaply", "To save time", "To make progress", "To start a project"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'don’t cry over spilled milk' mean?",
+    "options": ["Don’t be upset about things that cannot be changed", "Always clean up your mess", "Take care of your problems", "Cry when you are upset"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'don’t put all your eggs in one basket' mean?",
+    "options": ["Don’t risk everything on one opportunity", "Make sure your plans are secure", "Trust only one person", "Follow your dreams"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'elbow grease' mean?",
+    "options": ["Hard physical work", "A tool used for cleaning", "Gentle effort", "A type of oil"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'every cloud has a silver lining' mean?",
+    "options": ["Every difficult situation has a positive aspect", "Clouds always bring rain", "Things always get worse", "Good things always happen"],
+    "answer": 0
+},
+        {
+    "question": "What does the idiom 'get a taste of your own medicine' mean?",
+    "options": ["To experience the same negative treatment one has given to others", "To try something new", "To succeed in something", "To give advice to others"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'give someone the cold shoulder' mean?",
+    "options": ["To ignore or show indifference", "To give someone a warm welcome", "To express sympathy", "To help someone out"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'go the extra mile' mean?",
+    "options": ["To do more than what is expected", "To walk a long distance", "To compete with someone", "To ignore the task at hand"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'have a chip on your shoulder' mean?",
+    "options": ["To have a grudge or feel angry", "To be very confident", "To feel secure", "To carry something heavy"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'hit the nail on the head' mean?",
+    "options": ["To be exactly right", "To miss the point", "To hit something accidentally", "To be completely wrong"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'in the heat of the moment' mean?",
+    "options": ["In a moment of intense emotion", "During a cold situation", "In the middle of a fight", "Without thinking ahead"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'it’s a piece of cake' mean?",
+    "options": ["It’s something easy to do", "It’s something difficult", "It’s something sweet", "It’s something sour"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'jump on the bandwagon' mean?",
+    "options": ["To join others in doing something popular", "To ignore popular trends", "To follow your own path", "To create something new"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'keep your fingers crossed' mean?",
+    "options": ["To hope for a positive outcome", "To wait for bad news", "To make a decision", "To show confidence"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'kill two birds with one stone' mean?",
+    "options": ["To accomplish two tasks with one action", "To cause harm", "To solve one problem", "To do something difficult"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'let the cat out of the bag' mean?",
+    "options": ["To reveal a secret", "To free an animal", "To make a mistake", "To create a new idea"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'make a long story short' mean?",
+    "options": ["To tell something in a brief way", "To tell a story in detail", "To add unnecessary details", "To entertain someone"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'miss the boat' mean?",
+    "options": ["To miss an opportunity", "To catch a bus", "To be on time", "To take a chance"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'my hands are tied' mean?",
+    "options": ["I am unable to help", "I am free to help", "I am going to take action", "I will do what I can"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'no pain, no gain' mean?",
+    "options": ["You need to work hard to achieve something", "Pain should be avoided at all costs", "Success comes easily", "Only pain brings benefits"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'off the beaten track' mean?",
+    "options": ["In an unusual or unconventional location", "On a familiar path", "In a crowded place", "Far from danger"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'once in a blue moon' mean?",
+    "options": ["Something that happens very rarely", "Something that happens frequently", "Something that is impossible", "Something that is very exciting"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'out of the blue' mean?",
+    "options": ["Something that happens unexpectedly", "Something that happens frequently", "Something that is planned", "Something that is completely normal"],
+    "answer": 0
+},
+{
+    "question": "What does the idiom 'paint the town red' mean?",
+    "options": ["To go out and celebrate", "To decorate a building", "To stay home", "To be angry"],
+    "answer": 0
+}
     ],
     "punctuation": [
         {
@@ -2472,49 +4482,1009 @@
             "question": "Where should the comma be placed in this sentence: 'She bought apples bananas and oranges.'?",
             "options": ["After 'apples'", "After 'bananas'", "After 'oranges'", "Before 'bananas'"],
             "answer": 1
-        }
+        },
+                        {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m excited for the trip _____ we’ll be visiting some amazing places.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'She loves reading books _____ it’s her favorite hobby.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I can’t wait for the weekend _____ I’ll be visiting my family.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The weather is perfect for a walk _____ shall we go outside?'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'He loves playing soccer _____ it is his favorite sport.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'She said, ‘I will be there at 5:00 p.m.’ _____ I hope to see you then.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m not sure if I should go _____ I have a lot of work to do.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'It was such a great movie _____ I would definitely recommend it!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'Do you know where my keys are _____ I can’t find them.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve been to Paris _____ I’d love to go again.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'This is amazing _____ I can’t believe it’s happening!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'He’s planning to visit New York _____ he hasn’t booked his tickets yet.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I am so tired _____ I need a break!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'It’s so hot today _____ should we go swimming?'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'He asked if I was coming to the party _____ I said I wasn’t sure.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m looking forward to the concert _____ I’ve heard amazing things about it!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'Where are you going _____ I need to know the details.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'That’s a great idea _____ I think we should try it.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I didn’t expect that _____ it surprised me!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'He’s going to the store _____ I think he’ll be back soon.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                        {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I love to read books _____ especially mystery novels.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'She is very talented _____ she can play multiple instruments.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'It’s getting late _____ we should leave now.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'This movie is so intense _____ I couldn’t look away!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I think I left my jacket at home _____ should I go back and get it?'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'He didn’t believe me _____ I had to show him the evidence.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m really tired _____ but I need to finish this task.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'This restaurant is amazing _____ I love the food!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'What time are you leaving _____ I need to know so I can plan.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'It was an exciting game _____ the final score was tied.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I have never seen such a beautiful view _____ I wish I could stay here forever!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'Do you have any plans for the weekend _____ I’d love to join if you do.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The team worked hard on the project _____ they should be proud of their efforts.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m getting a new phone _____ I’m so excited about it!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'She’s going to the concert _____ I heard it’s going to be amazing.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'He was running late _____ but still managed to catch the bus.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve never been to this city before _____ I’m really excited to explore it.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I love traveling to new places _____ it’s always such an adventure!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'He doesn’t like spicy food _____ I do.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The movie was really suspenseful _____ I couldn’t wait to see what happened next.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                        {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The cake looks delicious _____ I can’t wait to taste it!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'We had so much fun yesterday _____ we should do it again soon!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m so tired _____ I think I’ll take a nap.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'This restaurant is my favorite _____ it serves the best pizza!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I have a meeting at 2 PM _____ I’ll be free afterward.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'Do you need help with your project _____ I’m available if you do.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I just finished reading the book _____ I loved it!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'Let’s go to the beach tomorrow _____ what do you think?'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'She loves to paint _____ especially landscapes.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I can’t believe it’s already Friday _____ where did the week go?'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The concert was amazing _____ the band performed flawlessly!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'We need to talk about the project _____ let’s meet tomorrow.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m going to the store _____ do you need anything?'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'It’s so cold outside _____ I’m wearing a jacket and a scarf!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I don’t like coffee _____ I prefer tea.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve never been to this city before _____ I’m excited to explore!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'Can you pick me up from the airport _____ I’ll arrive at 6 PM.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m looking forward to the weekend _____ it’s going to be so relaxing!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve been feeling really tired lately _____ I think I need some rest.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'She’s so talented _____ she can play the guitar, piano, and violin!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                        {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve never been to Japan _____ I’d love to visit someday.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The weather is so nice today _____ it’s perfect for a walk.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve been working hard all day _____ I think I deserve a break!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I can’t wait to see the new movie _____ I heard it’s really good.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'She’s always so helpful _____ I don’t know what I would do without her!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I have an exam tomorrow _____ I need to study tonight.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'Do you want to join me for dinner _____ I’m going to the new Italian restaurant.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I don’t like running _____ but I enjoy swimming.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'This book is amazing _____ I can’t put it down!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'We should go to the beach this weekend _____ it’s supposed to be sunny.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve been meaning to call you _____ I’ve just been really busy.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The kids are so excited for their trip _____ they can’t wait to leave!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I hope we can catch up soon _____ I miss hanging out with you.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve been practicing for weeks _____ and I finally nailed the song!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'We should start the meeting _____ but I’m waiting for one more person.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I can’t decide what to wear _____ maybe I’ll just choose something simple.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'You’re going to love the new restaurant _____ it has the best sushi in town!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve been to Paris before _____ I’d love to go back!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve been working on this project for months _____ I think it’s finally ready!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m really hungry _____ let’s order some food!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                        {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve been thinking about it for days _____ I still can’t make a decision.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I can’t believe it’s already December _____ time flies!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'She just bought a new car _____ and it’s really stylish!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'Are we still on for dinner tonight _____ or has the plan changed?'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I don’t feel like going to the party _____ maybe I’ll stay home.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'You need to finish your homework _____ or you won’t be able to go out later.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m really enjoying this book _____ it’s so engaging!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The concert was amazing _____ I had such a great time!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'It’s been a long week _____ I’m looking forward to the weekend.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m not sure if I should go to the meeting _____ what do you think?'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m so proud of my team _____ they did an excellent job!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I need to grab some groceries _____ I’ll be back in an hour.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m looking forward to the trip _____ it’s going to be so much fun!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I can’t find my keys _____ have you seen them?'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I have a lot of work to do _____ but I’m making good progress.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'It’s such a beautiful day _____ let’s go for a walk!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve never been to the beach in winter _____ I bet it’s peaceful.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m hoping for good weather _____ we’re planning an outdoor event.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve heard great things about that movie _____ I think I’ll watch it tonight!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I should get more sleep _____ but I’ve been so busy lately.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                        {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I can’t wait for the concert _____ it’s going to be amazing!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I didn’t expect to win the competition _____ but I’m thrilled!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'We should leave soon _____ it’s getting late.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The food at the restaurant was delicious _____ I’m definitely going back!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve never seen a sunset like that _____ it was breathtaking!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ll call you later _____ I need to finish this report first.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'Can you believe it’s already December _____ time flies so fast!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m not sure if I should go to the event _____ what do you think?'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m so glad I took the day off _____ I really needed the break!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I think I’ll have a salad for lunch _____ I’m trying to eat healthier.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The view from the top of the mountain was incredible _____ I can’t stop thinking about it!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I can’t decide between pizza or pasta _____ which one do you prefer?'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I had an amazing weekend _____ but now I’m exhausted!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'She was so excited to meet her favorite author _____ she couldn’t stop smiling!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ll bring the snacks _____ you bring the drinks.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I love reading books about history _____ they’re so fascinating!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'It’s so warm today _____ let’s go for a swim!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m planning to visit the museum tomorrow _____ would you like to join me?'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The team worked hard on the project _____ and their efforts paid off!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'We had a great time at the beach _____ but it was so crowded!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                        {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m planning to buy a new phone _____ but I haven’t decided which one yet.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I really enjoyed the movie _____ it was a bit too long for my liking.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I was so tired after the workout _____ but I felt amazing afterward!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ll be on vacation next week _____ I’ll respond to your emails when I get back.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I haven’t decided yet whether to go to the party _____ I’ll let you know soon.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve been thinking a lot about the future _____ but I’m not sure what’s next.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The new restaurant in town is amazing _____ you should definitely check it out!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m feeling a bit under the weather _____ I think I’ll stay home today.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m really looking forward to our trip _____ I hope the weather is nice!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I can’t believe how much I’ve learned in this course _____ I can’t wait to apply it in the real world!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m almost done with my project _____ I just need to finish the final details.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I don’t like horror movies _____ they scare me too much!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'She’s been working really hard on her research _____ I hope it pays off!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'It’s so cold outside _____ make sure to bundle up before you go out!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m thinking of going for a run _____ but I might just relax at home instead.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I love watching the sunset _____ it’s such a peaceful sight!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve got a lot of work to do _____ but I’ll get it done by the deadline.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'It was such a beautiful day _____ we decided to take a walk in the park!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I can’t believe how much I’ve learned this semester _____ it feels like time flew by!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m so proud of my team _____ they really pulled together to finish the project!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                        {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve been feeling great lately _____ but I still have a lot of work to do!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ll call you later _____ I’m just finishing something up right now.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'We had a great time at the beach _____ but we were exhausted afterward!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The meeting was long _____ we were all ready for a break by the end.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m excited about the concert _____ I’ve been waiting for months!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The kids were playing outside _____ it started to rain suddenly.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I can’t believe how fast time flies _____ it feels like just yesterday I started this job!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'We need to make a decision soon _____ time is running out!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I was planning to go hiking _____ but I had to cancel due to the weather.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'It’s so nice to finally relax _____ I’ve been working non-stop!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m going to the store later _____ do you need anything?'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The book was so interesting _____ I couldn’t put it down!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ll take care of the dishes _____ you can start on the laundry.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'We were walking down the street _____ when we saw a stray dog!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m so proud of my progress _____ I’ve come a long way since I started!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The weather is perfect for a picnic _____ let’s go to the park!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'We’re having a meeting tomorrow _____ don’t forget to bring your reports!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve been trying to get in shape _____ but it’s been tough!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m really looking forward to the weekend _____ it’s been a busy week!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'It was an amazing experience _____ I’ll never forget it!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                        {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve never been to Paris _____ I’d love to visit someday!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'She’s been working on her project all day _____ but she still has more to do.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m planning to go for a run later _____ would you like to join me?'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'This is the best pizza I’ve ever had _____ it’s amazing!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'We have a lot of work to do _____ so we need to stay focused.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The concert was fantastic _____ I’ll definitely go again next year!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m so tired _____ I think I’ll go to bed early tonight.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'We’ve been waiting for hours _____ and the event still hasn’t started.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The sun is setting _____ it’s time to head home.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I love listening to music _____ especially when I’m working.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I don’t understand this problem _____ can you explain it again?'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve been thinking about our conversation _____ I think we need to discuss it more.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'It’s so quiet in here _____ I can hear a pin drop.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'We need to hurry _____ the movie starts in 10 minutes!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m so happy with the results _____ I can’t wait to share them with everyone!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The new restaurant in town is amazing _____ I highly recommend it!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'We finally arrived at the airport _____ but we missed our flight.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ll have the salad for lunch _____ but I’m craving pizza!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m not sure what to do next _____ do you have any suggestions?'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'That was a great presentation _____ I learned a lot!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                        {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m so excited for the weekend _____ I’ve got lots of plans!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'We should leave now _____ the train departs in 15 minutes.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'That was an incredible performance _____ the audience was amazed!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I have so much to do today _____ I don’t even know where to start.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The weather is perfect for a hike _____ but I don’t have time today.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve never seen a movie like that before _____ it was so unique!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'This book is so captivating _____ I can’t put it down!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’ve been looking for that book everywhere _____ I’m so relieved I found it!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The meeting has been postponed _____ we’ll reschedule it for next week.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'It’s raining heavily outside _____ I think I’ll stay indoors today.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m really looking forward to the vacation _____ we’ll be visiting so many new places!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'It’s so quiet in here _____ you can hear a pin drop!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'We’ve been waiting for an hour _____ and the bus still hasn’t arrived.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'This new restaurant is fantastic _____ the food is amazing!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m so proud of my team _____ they did an excellent job!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I need to finish this project by tomorrow _____ can you help me with it?'",
+                    options: [".", "!", ",", "?"],
+                    answer: 3
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'We’re almost out of milk _____ I’ll go to the store later.'",
+                    options: [".", "!", ",", "?"],
+                    answer: 2
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'The party was amazing _____ I had such a great time!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I can’t believe how much I’ve learned _____ it’s been an amazing experience!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                },
+                {
+                    question: "Choose the correct punctuation mark to complete the sentence: 'I’m so happy to be here _____ this event is incredible!'",
+                    options: [".", "!", ",", "?"],
+                    answer: 1
+                }
     ]
-};
-
-        
-        // Example questions for development (can be replaced later)
-        // Let's add just a few samples to demonstrate functionality
-        questionBanks["grammar"] = [
-            {
-                question: "Which sentence uses the correct form of the verb?",
-                options: ["She don't like ice cream.", "She doesn't like ice cream.", "She not like ice cream.", "She do not likes ice cream."],
-                correctAnswer: 1,
-                explanation: "The correct negative form of the third person singular is 'doesn't'."
-            },
-            {
-                question: "Which of the following is a proper noun?",
-                options: ["chair", "happiness", "London", "beautiful"],
-                correctAnswer: 2,
-                explanation: "London is a proper noun because it's the name of a specific city."
-            },
-            {
-                question: "Which sentence is in the passive voice?",
-                options: ["John wrote the essay.", "The essay was written by John.", "John is writing an essay.", "John will write an essay."],
-                correctAnswer: 1,
-                explanation: "In passive voice, the subject receives the action. 'The essay was written by John' is passive, while the others are active."
-            }
-        ];
-        
-        questionBanks["vocabulary"] = [
-            {
-                question: "What is the meaning of 'ubiquitous'?",
-                options: ["rare", "present everywhere", "beautiful", "dangerous"],
-                correctAnswer: 1,
-                explanation: "Ubiquitous means present everywhere or commonly found."
-            },
-            {
-                question: "Which word is a synonym for 'benevolent'?",
-                options: ["kind", "angry", "wealthy", "strict"],
-                correctAnswer: 0,
-                explanation: "Benevolent means kind or well-meaning."
-            }
-        ];
-        
+};  
         // Quiz state
         let currentQuestions = [];
         let currentQuestionIndex = 0;
@@ -2827,52 +5797,6 @@
             // Reset topic selection
             topicSelect.value = "";
         }
-        
-        // Add more sample questions for other topics (for development purposes)
-        questionBanks["reading-comprehension"] = [
-            {
-                question: "What is the main purpose of skimming a text?",
-                options: [
-                    "To understand every detail", 
-                    "To get a general idea of the content", 
-                    "To find specific information", 
-                    "To analyze the author's writing style"
-                ],
-                correctAnswer: 1,
-                explanation: "Skimming is a reading technique used to quickly get the main idea or gist of a text."
-            },
-            {
-                question: "Which of these is NOT a common type of comprehension question?",
-                options: [
-                    "Inference questions", 
-                    "Detail questions", 
-                    "Vocabulary questions", 
-                    "Translation questions"
-                ],
-                correctAnswer: 3,
-                explanation: "Translation questions are not typically part of reading comprehension tests, as they focus on language conversion rather than understanding."
-            }
-        ];
-        
-        questionBanks["literary-devices"] = [
-            {
-                question: "In the phrase 'the sky wept,' what literary device is being used?",
-                options: ["simile", "metaphor", "personification", "hyperbole"],
-                correctAnswer: 2,
-                explanation: "Personification gives human qualities to non-human objects. Here, the sky is given the human ability to weep."
-            },
-            {
-                question: "Which of these is an example of alliteration?",
-                options: [
-                    "The early bird gets the worm", 
-                    "She sells seashells by the seashore", 
-                    "The silence was deafening", 
-                    "As brave as a lion"
-                ],
-                correctAnswer: 1,
-                explanation: "Alliteration is the repetition of the same sound at the beginning of adjacent or closely connected words. 'She sells seashells' repeats the 's' sound."
-            }
-        ];
     </script>
 </body>
 </html>
