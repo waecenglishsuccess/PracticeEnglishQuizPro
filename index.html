@@ -304,12 +304,68 @@
     <script>
         // Initialize the question banks (empty for now)
         const questionBanks = {
-            "grammar": [],
-            "vocabulary": [],
-            "reading-comprehension": [],
-            "idioms-phrases": [],
-            "punctuation": []
-        };
+    "grammar": [
+        {
+            "question": "Which sentence is grammatically correct?",
+            "options": ["She don't like ice cream.", "She doesn't like ice cream.", "She didn't likes ice cream.", "She don't likes ice cream."],
+            "answer": 1
+        },
+        {
+            "question": "Choose the correct form of the verb: 'They _____ to the store yesterday.'",
+            "options": ["go", "went", "going", "goes"],
+            "answer": 1
+        }
+    ],
+    "vocabulary": [
+        {
+            "question": "What does the word 'benevolent' mean?",
+            "options": ["Kind and generous", "Strict and unforgiving", "Angry and hostile", "Wise and knowledgeable"],
+            "answer": 0
+        },
+        {
+            "question": "What does 'ephemeral' mean?",
+            "options": ["Lasting forever", "Short-lived", "Extremely rare", "Hard to find"],
+            "answer": 1
+        }
+    ],
+    "reading-comprehension": [
+        {
+            "question": "What is the main theme of the passage?",
+            "options": ["Friendship", "Adventure", "Love", "Loneliness"],
+            "answer": 2
+        },
+        {
+            "question": "According to the passage, why did the character leave the town?",
+            "options": ["To find a new job", "To escape danger", "To visit a friend", "To get married"],
+            "answer": 1
+        }
+    ],
+    "idioms-phrases": [
+        {
+            "question": "What does the idiom 'paint the town red' mean?",
+            "options": ["To go out and celebrate", "To decorate a building", "To stay home", "To be angry"],
+            "answer": 0
+        },
+        {
+            "question": "What does the phrase 'break the ice' mean?",
+            "options": ["To break something physically", "To start a conversation", "To end an argument", "To destroy a relationship"],
+            "answer": 1
+        }
+    ],
+    "punctuation": [
+        {
+            "question": "Which sentence is punctuated correctly?",
+            "options": ["I love reading books; but I don't have time.", "I love reading books but I don't have time.", "I love reading books, but I don't have time.", "I love reading books but; I don't have time."],
+            "answer": 2
+        },
+        {
+            "question": "Where should the comma be placed in this sentence: 'She bought apples bananas and oranges.'?",
+            "options": ["After 'apples'", "After 'bananas'", "After 'oranges'", "Before 'bananas'"],
+            "answer": 1
+        }
+    ]
+};
+
         
         // Example questions for development (can be replaced later)
         // Let's add just a few samples to demonstrate functionality
