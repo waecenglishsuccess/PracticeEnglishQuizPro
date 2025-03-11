@@ -5485,318 +5485,332 @@
                 }
     ]
 };  
-        // Quiz state
-        let currentQuestions = [];
-        let currentQuestionIndex = 0;
-        let currentTopic = "";
-        let userAnswers = [];
-        let score = 0;
-        
-        // DOM Elements
-        const topicSelect = document.getElementById("topic-select");
-        const startQuizBtn = document.getElementById("start-quiz");
-        const quizContainer = document.getElementById("quiz-container");
-        const progressContainer = document.getElementById("progress-container");
-        const resultContainer = document.getElementById("result-container");
-        const questionText = document.getElementById("question-text");
-        const optionsContainer = document.getElementById("options-container");
-        const feedbackElement = document.getElementById("feedback");
-        const prevBtn = document.getElementById("prev-btn");
-        const nextBtn = document.getElementById("next-btn");
-        const submitBtn = document.getElementById("submit-btn");
-        const progressText = document.getElementById("progress-text");
-        const scoreText = document.getElementById("score-text");
-        const progressBar = document.getElementById("progress-bar");
-        const finalScore = document.getElementById("final-score");
-        const performanceFeedback = document.getElementById("performance-feedback");
-        const completedTopic = document.getElementById("completed-topic");
-        const restartBtn = document.getElementById("restart-btn");
-        
-        // Event Listeners
-        startQuizBtn.addEventListener("click", startQuiz);
-        prevBtn.addEventListener("click", showPreviousQuestion);
-        nextBtn.addEventListener("click", showNextQuestion);
-        submitBtn.addEventListener("click", submitAnswer);
-        restartBtn.addEventListener("click", resetQuiz);
-        
-        // Function to start the quiz
-        function startQuiz() {
-            currentTopic = topicSelect.value;
-            
-            if (!currentTopic) {
-                alert("Please select a topic first!");
-                return;
-            }
-            
-            // Check if there are questions for this topic
-            if (questionBanks[currentTopic].length === 0) {
-                alert("No questions available for this topic yet. Please select another topic.");
-                return;
-            }
-            
-            // Get random questions for the quiz
-            const availableQuestions = questionBanks[currentTopic];
-            
-            // If less than 10 questions are available, use all of them
-            const numQuestions = Math.min(10, availableQuestions.length);
-            
-            // Generate random questions
-            currentQuestions = getRandomQuestions(availableQuestions, numQuestions);
-            
-            // Reset state
-            currentQuestionIndex = 0;
-            userAnswers = Array(currentQuestions.length).fill(null);
-            score = 0;
-            
-            // Hide topic selector and show quiz
-            document.querySelector(".topic-selector").style.display = "none";
-            quizContainer.style.display = "block";
-            progressContainer.style.display = "block";
-            
-            // Display first question
-            displayQuestion();
-            updateProgressBar();
+   // Quiz state
+let currentQuestions = [];
+let currentQuestionIndex = 0;
+let currentTopic = "";
+let userAnswers = [];
+let score = 0;
+
+// DOM Elements
+const topicSelect = document.getElementById("topic-select");
+const startQuizBtn = document.getElementById("start-quiz");
+const quizContainer = document.getElementById("quiz-container");
+const progressContainer = document.getElementById("progress-container");
+const resultContainer = document.getElementById("result-container");
+const questionText = document.getElementById("question-text");
+const optionsContainer = document.getElementById("options-container");
+const feedbackElement = document.getElementById("feedback");
+const prevBtn = document.getElementById("prev-btn");
+const nextBtn = document.getElementById("next-btn");
+const submitBtn = document.getElementById("submit-btn");
+const progressText = document.getElementById("progress-text");
+const scoreText = document.getElementById("score-text");
+const progressBar = document.getElementById("progress-bar");
+const finalScore = document.getElementById("final-score");
+const performanceFeedback = document.getElementById("performance-feedback");
+const completedTopic = document.getElementById("completed-topic");
+const restartBtn = document.getElementById("restart-btn");
+
+// Event Listeners
+startQuizBtn.addEventListener("click", startQuiz);
+prevBtn.addEventListener("click", showPreviousQuestion);
+nextBtn.addEventListener("click", showNextQuestion);
+submitBtn.addEventListener("click", submitAnswer);
+restartBtn.addEventListener("click", resetQuiz);
+
+// Function to start the quiz
+function startQuiz() {
+    currentTopic = topicSelect.value;
+    
+    if (!currentTopic) {
+        alert("Please select a topic first!");
+        return;
+    }
+    
+    // Check if there are questions for this topic
+    if (questionBanks[currentTopic].length === 0) {
+        alert("No questions available for this topic yet. Please select another topic.");
+        return;
+    }
+    
+    // Get random questions for the quiz
+    const availableQuestions = questionBanks[currentTopic];
+    
+    // If less than 10 questions are available, use all of them
+    const numQuestions = Math.min(10, availableQuestions.length);
+    
+    // Generate random questions
+    currentQuestions = getRandomQuestions(availableQuestions, numQuestions);
+    
+    // Reset state
+    currentQuestionIndex = 0;
+    userAnswers = Array(currentQuestions.length).fill(null);
+    score = 0;
+    
+    // Hide topic selector and show quiz
+    document.querySelector(".topic-selector").style.display = "none";
+    quizContainer.style.display = "block";
+    progressContainer.style.display = "block";
+    
+    // Display first question
+    displayQuestion();
+    updateProgressBar();
+}
+
+// Function to get random questions
+function getRandomQuestions(questions, num) {
+    // If there are fewer questions than requested, return all available questions
+    if (questions.length <= num) {
+        return [...questions];
+    }
+    
+    const result = [];
+    const indices = new Set();
+    
+    while (indices.size < num) {
+        const randomIndex = Math.floor(Math.random() * questions.length);
+        if (!indices.has(randomIndex)) {
+            indices.add(randomIndex);
+            result.push(questions[randomIndex]);
         }
+    }
+    
+    return result;
+}
+
+// Function to display current question
+function displayQuestion() {
+    const currentQuestion = currentQuestions[currentQuestionIndex];
+    questionText.textContent = `${currentQuestionIndex + 1}. ${currentQuestion.question}`;
+    
+    // Clear options container and feedback
+    optionsContainer.innerHTML = "";
+    feedbackElement.style.display = "none";
+    
+    // Add options
+    currentQuestion.options.forEach((option, index) => {
+        const optionElement = document.createElement("div");
+        optionElement.classList.add("option");
+        optionElement.textContent = option;
+        optionElement.dataset.index = index;
         
-        // Function to get random questions
-        function getRandomQuestions(questions, num) {
-            // If there are fewer questions than requested, return all available questions
-            if (questions.length <= num) {
-                return [...questions];
-            }
-            
-            const result = [];
-            const indices = new Set();
-            
-            while (indices.size < num) {
-                const randomIndex = Math.floor(Math.random() * questions.length);
-                if (!indices.has(randomIndex)) {
-                    indices.add(randomIndex);
-                    result.push(questions[randomIndex]);
-                }
-            }
-            
-            return result;
-        }
-        
-        // Function to display current question
-        function displayQuestion() {
-            const currentQuestion = currentQuestions[currentQuestionIndex];
-            questionText.textContent = `${currentQuestionIndex + 1}. ${currentQuestion.question}`;
-            
-            // Clear options container and feedback
-            optionsContainer.innerHTML = "";
-            feedbackElement.style.display = "none";
-            
-            // Add options
-            currentQuestion.options.forEach((option, index) => {
-                const optionElement = document.createElement("div");
-                optionElement.classList.add("option");
-                optionElement.textContent = option;
-                optionElement.dataset.index = index;
+        // If user has already answered this question
+        if (userAnswers[currentQuestionIndex] !== null) {
+            // Mark selected option
+            if (userAnswers[currentQuestionIndex] === index) {
+                optionElement.classList.add("selected");
                 
-                // If user has already answered this question
-                if (userAnswers[currentQuestionIndex] !== null) {
-                    // Mark selected option
-                    if (userAnswers[currentQuestionIndex] === index) {
-                        optionElement.classList.add("selected");
-                        
-                        // Show if it was correct or incorrect
-                        if (index === currentQuestion.correctAnswer) {
-                            optionElement.classList.add("correct");
-                        } else {
-                            optionElement.classList.add("incorrect");
-                        }
-                    }
-                    
-                    // Always highlight the correct answer
-                    if (index === currentQuestion.correctAnswer) {
-                        optionElement.classList.add("correct");
-                    }
-                    
-                    // Disable clicking on options for answered questions
-                    optionElement.style.pointerEvents = "none";
-                    
-                    // Show feedback
-                    displayFeedback(currentQuestion);
-                } else {
-                    // Add click event for unanswered questions
-                    optionElement.addEventListener("click", () => selectOption(index));
-                }
-                
-                optionsContainer.appendChild(optionElement);
-            });
-            
-            // Update button states
-            updateButtons();
-            
-            // Update progress text
-            progressText.textContent = `Question ${currentQuestionIndex + 1} of ${currentQuestions.length}`;
-            updateProgressBar();
-        }
-        
-        // Function to select an option
-        function selectOption(index) {
-            // Remove 'selected' class from all options
-            const options = optionsContainer.querySelectorAll(".option");
-            options.forEach(option => option.classList.remove("selected"));
-            
-            // Add 'selected' class to clicked option
-            options[index].classList.add("selected");
-            
-            // Enable submit button
-            submitBtn.disabled = false;
-        }
-        
-        // Function to submit answer
-        function submitAnswer() {
-            const options = optionsContainer.querySelectorAll(".option");
-            let selectedIndex = null;
-            
-            options.forEach((option, index) => {
-                if (option.classList.contains("selected")) {
-                    selectedIndex = index;
-                }
-            });
-            
-            if (selectedIndex === null) {
-                alert("Please select an answer!");
-                return;
-            }
-            
-            // Store user's answer
-            userAnswers[currentQuestionIndex] = selectedIndex;
-            
-            // Check if answer is correct
-            const currentQuestion = currentQuestions[currentQuestionIndex];
-            const isCorrect = selectedIndex === currentQuestion.correctAnswer;
-            
-            if (isCorrect) {
-                score++;
-            }
-            
-            // Update score text
-            scoreText.textContent = `Score: ${score}/${currentQuestionIndex + 1}`;
-            
-            // Mark correct and incorrect options
-            options.forEach((option, index) => {
-                option.style.pointerEvents = "none";
-                
+                // Show if it was correct or incorrect
                 if (index === currentQuestion.correctAnswer) {
-                    option.classList.add("correct");
-                } else if (index === selectedIndex && !isCorrect) {
-                    option.classList.add("incorrect");
+                    optionElement.classList.add("correct");
+                } else {
+                    optionElement.classList.add("incorrect");
                 }
-            });
+            }
             
-            // Display feedback
+            // Always highlight the correct answer
+            if (index === currentQuestion.correctAnswer) {
+                optionElement.classList.add("correct");
+            }
+            
+            // Disable clicking on options for answered questions
+            optionElement.style.pointerEvents = "none";
+            
+            // Show feedback
             displayFeedback(currentQuestion);
-            
-            // Update button states
-            submitBtn.disabled = true;
-            nextBtn.disabled = false;
-            
-            // If this is the last question, enable the finish button
-            if (currentQuestionIndex === currentQuestions.length - 1) {
-                nextBtn.textContent = "Finish Quiz";
-            }
+        } else {
+            // Add click event for unanswered questions
+            optionElement.addEventListener("click", () => selectOption(index));
         }
         
-        // Function to display feedback
-        function displayFeedback(question) {
-            const selectedAnswer = userAnswers[currentQuestionIndex];
-            const isCorrect = selectedAnswer === question.correctAnswer;
-            
-            feedbackElement.textContent = question.explanation || 
-                (isCorrect ? "Correct!" : "Incorrect. The correct answer is: " + 
-                 question.options[question.correctAnswer]);
-            
-            feedbackElement.className = "feedback " + (isCorrect ? "correct" : "incorrect");
-            feedbackElement.style.display = "block";
+        optionsContainer.appendChild(optionElement);
+    });
+    
+    // Update button states
+    updateButtons();
+    
+    // Update progress text
+    progressText.textContent = `Question ${currentQuestionIndex + 1} of ${currentQuestions.length}`;
+    updateProgressBar();
+}
+
+// Modified function to select an option with immediate feedback
+function selectOption(index) {
+    // Remove 'selected' class from all options
+    const options = optionsContainer.querySelectorAll(".option");
+    options.forEach(option => option.classList.remove("selected"));
+    
+    // Add 'selected' class to clicked option
+    options[index].classList.add("selected");
+    
+    // Provide immediate visual feedback (but don't record answer yet)
+    const currentQuestion = currentQuestions[currentQuestionIndex];
+    
+    // Show which answer is correct
+    options.forEach((option, optionIndex) => {
+        if (optionIndex === currentQuestion.correctAnswer) {
+            option.classList.add("correct");
         }
-        
-        // Function to show next question
-        function showNextQuestion() {
-            if (currentQuestionIndex === currentQuestions.length - 1) {
-                // This is the last question, show results
-                showResults();
-                return;
-            }
-            
-            currentQuestionIndex++;
-            displayQuestion();
+    });
+    
+    // If selected answer is incorrect, mark it
+    if (index !== currentQuestion.correctAnswer) {
+        options[index].classList.add("incorrect");
+    }
+    
+    // Display feedback immediately
+    feedbackElement.textContent = currentQuestion.explanation || 
+        (index === currentQuestion.correctAnswer ? "Correct!" : "Incorrect. The correct answer is: " + 
+         currentQuestion.options[currentQuestion.correctAnswer]);
+    
+    feedbackElement.className = "feedback " + (index === currentQuestion.correctAnswer ? "correct" : "incorrect");
+    feedbackElement.style.display = "block";
+    
+    // Enable submit button to officially record the answer
+    submitBtn.disabled = false;
+}
+
+// Function to submit answer
+function submitAnswer() {
+    const options = optionsContainer.querySelectorAll(".option");
+    let selectedIndex = null;
+    
+    options.forEach((option, index) => {
+        if (option.classList.contains("selected")) {
+            selectedIndex = index;
         }
-        
-        // Function to show previous question
-        function showPreviousQuestion() {
-            if (currentQuestionIndex > 0) {
-                currentQuestionIndex--;
-                displayQuestion();
-            }
-        }
-        
-        // Function to update button states
-        function updateButtons() {
-            prevBtn.disabled = currentQuestionIndex === 0;
-            
-            // Next button is enabled only if current question is answered
-            nextBtn.disabled = userAnswers[currentQuestionIndex] === null;
-            
-            // Submit button is disabled if user has already answered this question
-            submitBtn.disabled = userAnswers[currentQuestionIndex] !== null;
-            
-            // Change next button text for last question
-            if (currentQuestionIndex === currentQuestions.length - 1) {
-                nextBtn.textContent = "Finish Quiz";
-            } else {
-                nextBtn.textContent = "Next";
-            }
-        }
-        
-        // Function to update progress bar
-        function updateProgressBar() {
-            const progress = ((currentQuestionIndex + 1) / currentQuestions.length) * 100;
-            progressBar.style.width = `${progress}%`;
-        }
-        
-        // Function to show results
-        function showResults() {
-            quizContainer.style.display = "none";
-            progressContainer.style.display = "none";
-            resultContainer.style.display = "block";
-            
-            completedTopic.textContent = topicSelect.options[topicSelect.selectedIndex].text;
-            finalScore.textContent = `${score}/${currentQuestions.length}`;
-            
-            // Calculate percentage
-            const percentage = (score / currentQuestions.length) * 100;
-            
-            // Set performance feedback based on score
-            if (percentage >= 90) {
-                performanceFeedback.textContent = "Outstanding! You've mastered this topic!";
-            } else if (percentage >= 70) {
-                performanceFeedback.textContent = "Great job! You have a good understanding of this topic.";
-            } else if (percentage >= 50) {
-                performanceFeedback.textContent = "Good effort! With a bit more practice, you'll improve.";
-            } else {
-                performanceFeedback.textContent = "Keep practicing! This topic needs more attention.";
-            }
-        }
-        
-        // Function to reset quiz and go back to topic selection
-        function resetQuiz() {
-            resultContainer.style.display = "none";
-            document.querySelector(".topic-selector").style.display = "block";
-            
-            // Reset state
-            currentQuestions = [];
-            currentQuestionIndex = 0;
-            userAnswers = [];
-            score = 0;
-            
-            // Reset topic selection
-            topicSelect.value = "";
-        }
+    });
+    
+    if (selectedIndex === null) {
+        alert("Please select an answer!");
+        return;
+    }
+    
+    // Store user's answer
+    userAnswers[currentQuestionIndex] = selectedIndex;
+    
+    // Check if answer is correct
+    const currentQuestion = currentQuestions[currentQuestionIndex];
+    const isCorrect = selectedIndex === currentQuestion.correctAnswer;
+    
+    if (isCorrect) {
+        score++;
+    }
+    
+    // Update score text
+    scoreText.textContent = `Score: ${score}/${currentQuestionIndex + 1}`;
+    
+    // Disable clicking on options after submitting
+    options.forEach((option) => {
+        option.style.pointerEvents = "none";
+    });
+    
+    // Update button states
+    submitBtn.disabled = true;
+    nextBtn.disabled = false;
+    
+    // If this is the last question, enable the finish button
+    if (currentQuestionIndex === currentQuestions.length - 1) {
+        nextBtn.textContent = "Finish Quiz";
+    }
+}
+
+// Function to display feedback
+function displayFeedback(question) {
+    const selectedAnswer = userAnswers[currentQuestionIndex];
+    const isCorrect = selectedAnswer === question.correctAnswer;
+    
+    feedbackElement.textContent = question.explanation || 
+        (isCorrect ? "Correct!" : "Incorrect. The correct answer is: " + 
+         question.options[question.correctAnswer]);
+    
+    feedbackElement.className = "feedback " + (isCorrect ? "correct" : "incorrect");
+    feedbackElement.style.display = "block";
+}
+
+// Function to show next question
+function showNextQuestion() {
+    if (currentQuestionIndex === currentQuestions.length - 1) {
+        // This is the last question, show results
+        showResults();
+        return;
+    }
+    
+    currentQuestionIndex++;
+    displayQuestion();
+}
+
+// Function to show previous question
+function showPreviousQuestion() {
+    if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        displayQuestion();
+    }
+}
+
+// Function to update button states
+function updateButtons() {
+    prevBtn.disabled = currentQuestionIndex === 0;
+    
+    // Next button is enabled only if current question is answered
+    nextBtn.disabled = userAnswers[currentQuestionIndex] === null;
+    
+    // Submit button is disabled if user has already answered this question
+    submitBtn.disabled = userAnswers[currentQuestionIndex] !== null;
+    
+    // Change next button text for last question
+    if (currentQuestionIndex === currentQuestions.length - 1) {
+        nextBtn.textContent = "Finish Quiz";
+    } else {
+        nextBtn.textContent = "Next";
+    }
+}
+
+// Function to update progress bar
+function updateProgressBar() {
+    const progress = ((currentQuestionIndex + 1) / currentQuestions.length) * 100;
+    progressBar.style.width = `${progress}%`;
+}
+
+// Function to show results
+function showResults() {
+    quizContainer.style.display = "none";
+    progressContainer.style.display = "none";
+    resultContainer.style.display = "block";
+    
+    completedTopic.textContent = topicSelect.options[topicSelect.selectedIndex].text;
+    finalScore.textContent = `${score}/${currentQuestions.length}`;
+    
+    // Calculate percentage
+    const percentage = (score / currentQuestions.length) * 100;
+    
+    // Set performance feedback based on score
+    if (percentage >= 90) {
+        performanceFeedback.textContent = "Outstanding! You've mastered this topic!";
+    } else if (percentage >= 70) {
+        performanceFeedback.textContent = "Great job! You have a good understanding of this topic.";
+    } else if (percentage >= 50) {
+        performanceFeedback.textContent = "Good effort! With a bit more practice, you'll improve.";
+    } else {
+        performanceFeedback.textContent = "Keep practicing! This topic needs more attention.";
+    }
+}
+
+// Function to reset quiz and go back to topic selection
+function resetQuiz() {
+    resultContainer.style.display = "none";
+    document.querySelector(".topic-selector").style.display = "block";
+    
+    // Reset state
+    currentQuestions = [];
+    currentQuestionIndex = 0;
+    userAnswers = [];
+    score = 0;
+    
+    // Reset topic selection
+    topicSelect.value = "";
+}
     </script>
 </body>
 </html>
